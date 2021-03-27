@@ -14,11 +14,17 @@ description: "This is a collaboration guide for Reprex open-source projects."
 
 # Welcome
 
-Here.
+We work with data in the R and Python language, and we are open for C++, too. Our documentation is made in markdown to be able to produce html, pdf, word, powerpoint, reveal.js or any type of output. Our long-form documentation is knit together with the help of the 'bookdown', 'knitr', 'rmarkdown' packages in the R language -- they combine YAML headers and enriched markdown that can contain R, Python or C++ executable code 'chunks', and our website use markdown, hugo, and the 'blogdown' connector between Go, R, and markdown.
 
-```{r include=FALSE}
+This heterogeneous workflow is best served in RStudio.  While you can write code in your favorite IDE in Python and/or C++, RStudio is unrivaled in its capability to connect various markup languages and several programming languages. Therefore, for documentation purposes, we use RStudio.  You can contribute in any other editor -- our longform documentation and our website content is, after all, marked-up text.  If you need to execute something for within the documentation, only RStudio will do the trick.
+
+Open collaboration is an agile project management method that breaks up the tasks to small, independent, decentralized acts that can be performed by individuals or research groups.  It requires a solid shared knowledge base and a very high quality documentation. This collaboration guide serves two goals: to practice this documentation workflow, and to create a continuously improved documentation for our collaboration methods and practices.
+
+Provided that you use whatever IDE and Git/Github, there is unlikely that this guide will pose any challenge for you.  Markdown and YAML are very simple, special-purpose markdown “languages” (the language is a big word here) that you can learn in 1-2 hours. They create marked up text, which we use for a hypertextual reference guide.  To collaboration on our data products, there are other skills necessary, but for documentation, technically you can get started with a clean text editor and git.
+
+
+```{r crate-bibliography, include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'regions', 'retroharmonize', 'iotables'
-), 'packages.bib')
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'regions', 'retroharmonize', 'iotables'), 'packages.bib')
 ```

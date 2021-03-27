@@ -1,0 +1,17 @@
+# Data Acquistion {#acquisition}
+
+Whatever is the source of the data we use it, we never trust it fully. We need check its strength and weaknesses, and bring it to a complete, documented and tidy form.
+
+
+## Eurostat
+
+
+
+## Harmonized Survey Programs
+
+## Music APIs
+
+### Spotify API
+
+### Bandcamp
+

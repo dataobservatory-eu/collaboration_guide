@@ -1,0 +1,122 @@
+# Applications {#applications}
+
+We process and release data to be used in various business, policy and scientific applications. In this collaboration guideline we do not want to document these applications - they are very specific to the problem, domain or client. The aim of this guideline to make the data collection, processing and dissemination workflow open for collaborators.  The aim of this collaboration is to create high-quality, timely and well-documented data assets for various applications. We add application-specific information here to the extent that it helps data collaboration.
+
+## File, Variable Names, Value Labels
+
+> There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton
+
+We are mainly naming things when we name a path to a file (subdirectory and filename), create a database schema, and write code in any language. Of course, computers can translate between names, but the worst use of our time is to write code to rename things in a database to our code, or rename file names.
+
+In recent reproducible science practice there have been many attempts to standardize variable naming. Because different (programming) languages have different well-established cultures, and naming things is a cognitive process, a full harmonization is not possible, but a high-level of harmonization already can save many-many hours in code writing, analysis and debugging.
+
+### Path
+
+Because our final output is often an automatically created website (in the go language, using the hugo server application), we must be very aware of the entire path. A hugo website contains that website metadata in the path - the relative position of a file tells the server what is the aim of the file. 
+
+Our repos follow the naming conventions of peer-reviewed R packages.  They can be extended to allow Python-specific elements.
+
+Always present: 
+`data-raw`: subfolder that contains data to be further processed
+`data`: contains well-processed, well-documented, re-usable, or publishable, releasable data.
+`R`: R scripts
+`plots`: saved static plots, maps
+`Python`: Python scripts
+`not_included`: your scrap files, environment files, *not to be synchronized on github*.
+
+In R software releases only:
+`man` : not always present, `manual` code documentation files.
+`vignette`: only in R software releases, documentation file
+
+In longform documentation only:
+`_book`: Only present in long-form bookdown publication, the current version of the books in different folders. (It is accompanied with a `_bookdown_files` folder)
+s.
+
+In websites only:
+Hugo has its own relative path system.
+
+#### R language
+
+Consider the two identical meaning R code:
+
+```{r path, eval=FALSE}
+
+read.csv("data/my-csv.csv")
+
+read.csv(file.path("data-raw", "my-csv.csv"))
+```
+
+On CRAN, only the latter is permissible for publication?  Why?  Because the various Linux distributions, Windows and Mac uses paths differently.  You can never be sure that a file path will mean the same thing with 100% certainty, especially in the case of a full path.  The full path is file-system dependent, and the three families of operational system use different ones. 
+
+The function `file.path()` in R makes sure that on any R-supported platforms your code will thy to read `my-csv.csv` from the relative `data-raw` path. 
+
+### Variable nameing styles
+
+We prefer the `snake_case_naming_convention` with lowercase letters.  The names should omit stopwords, whenever possible, remain as short as possible. The organization of the name should help simple variable name selection rules, such as `starts_with()` or `ends_with()` in the tidyverse - this helps programming a great deal!
+
+Consider the following scenario:
+
+`spotify_artist_id`
+`spotify_song_id`
+`spotify_artist_name`
+`deezer_song_id`
+`deezer_artist_name`
+`bandcamp_song_id`
+`bandcamp_artist_name`
+`bandcamp_song_title`
+
+Do you work with bandcamp data only:
+
+`select ( starts_with("bandcamp"))`
+
+Do you want to check how ID's match
+
+`select ( ends_with("id"))`
+
+
+Do you want to work with artist (person) data or song (sound recording) data as a unit?
+
+`select ( contains("song"))`
+
+`select ( contains("artist"))`
+
+In R, we use `dbplyr` and the `tidyverse`, particularly `dplyr`, a non-standard evaluation of the language which makes R and SQL as interchangeable as possible. The `dbplyr` package allows the combination of queries to a database in SQL, R-dpylr, or even both in the same query.
+
+Again, when updating/querying a database, the best if database columns need not to be renamed in the updating/processing code. 
+
+The `lower_snake_case` is a partly subjective choice. The lowercase is usually a very natural compromise between `UPPERCASE`, or `camelCase` naming conventions, and the renaming can happen with simple programmatic ways. In the R language we use the package `snakecase` for this, which translates a text or caption to any case you want - title case, camel case, snake case.
+
+### Character coding
+
+Character coding is an unresolved problem of the world. We use `UTF-8` whatever it means, and we pray that our products will be readable on all platforms. 
+
+## Statistical Processing & Indicators {#statistical-software}
+
+All our critical processing code goes through anonymous peer-review on CRAN. We take pride in the fact that our software goes through dozens of unit-tests and a human review and it can be tested by anybody.
+
+### retroharmonize
+
+The aim of [retroharmonize](https://reprex.nl/software/retroharmonize/) is to provide tools for reproducible retrospective (ex-post) harmonization of datasets that contain variables measuring the same concepts but coded in different ways. Ex-post data harmonization enables better use of existing data and creates new research opportunities. For example, harmonizing data from different countries enables cross-national comparisons, while merging data from different time points makes it possible to track changes over time. [@retroharmonize]
+
+It has two peer-reviewed releases.
+
+### regions
+
+The [regions](https://reprex.nl/software/regions/) package is an offspring of the eurostat package on [rOpenGov](https://github.com/rOpenGov). It started as a tool to validate and re-code regional Eurostat statistics, but it aims to be a general solution for all sub-national statistics. It will be developed parallel with other rOpenGov packages. [@regions]
+
+It has one peer-reviewed release.
+
+### iotables
+
+[iotables](https://reprex.nl/software/iotables/) processes all the symmetric input-output tables of the EU member states, and calculates direct, indirect and induced effects, multipliers for GVA, employment, taxation. These are important inputs into policy evaluation, business forecasting, or granting/development indicator design. iotables is used by about 800 experts around the world. [@iotables]
+
+It has several peer-reviewed releases.
+
+
+## Machine Learning Applications
+
+
+### Listen Local app
+
+
+### Bandcamp Librarian app

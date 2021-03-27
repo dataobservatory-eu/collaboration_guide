@@ -1,0 +1,31 @@
+# Data Storage & Databases
+
+We may pursue several data storage philosophies. 
+
+Sometimes it is best to download data as it is, without processing, and saving it. These are the raw data assets. The raw data can be stored in a file system, or a very simple database.
+
+Often it is not desirable to save the data in raw form, and we pre-process it to limit redundancy. For example, when downloading data from the Spotify API, it may be desirable to filter out redundant information, and just save marginal, new data. This data is best stored in some searchable, amendable database.
+
+When we work with machine learning applications, we usually need tidy and processed individual data. When we work with business, policy, scientific analysis, we often need statistically aggregated (or disaggregated) data. Similarly to a machine learning application, the individual data goes through a complicated and error-prone software code until it gains its final form. The best view for a non-statistical data scientist to view our indicator creation process as an app itself. When we release a regional GDP dataset, we modify the input data in a very complicated process, and the published dataset is not an input (like a well-designed feature set) but a finished output.
+
+The finished statistical output is a product, not a raw ingredient, and it is not desirable to store it in a database format.  There are so many things that can go wrong with an indicator. Our statistical indicators are created by a code that is never finished.  Whenever a new issue comes up, we add more processing code, new unit-tests. We constantly improve the statistically processed datasets, they need versioning, and often the best solution if the raw data is processed on the spot with the latest code. 
+
+We resisted databases for long, particularly centralized databases, because statistical end-products are at best created instantaneously with the best available data input, processing code and unit-testing.
+
+Placing data in a database, particularly a not very well documented database goes against our core reproducible research principles. Strictly speaking, we must reveal our entire data process, from downloading a data point from the Spotify API to releasing a visualization, both input and processing code. A database adds a lot of complexity and renders the full process oversight unreadable. While technically reproducability may still be there, it is not inviting. (We can also reverse-engineer a lot of data processes, but we do not think that this is a real reproducible practice.)
+
+We always must keep the right balance between the advantages of using a database and the advantages of a fully transparent and readable data workflow. We must balanace the documentation burden of a constantly updated database with keeping the process as a documentation and not hiding immediate results in a database.
+
+
+## Raw data assets {#dta-raw}
+
+## Processed, individual data
+
+## Indicators - statistically processed data
+
+## Periodic data releases
+
+## Interactive data releases
+
+## Continous data releases in API
+
