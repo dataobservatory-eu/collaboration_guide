@@ -3,9 +3,29 @@ title: "Open Collaboration Guide"
 author: ["Daniel Antal"]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
-documentclass: book
-bibliography: [book.bib, packages.bib]
+output: 
+  documentclass: book
+  bookdown::gitbook: default
+  bookdown::pdf_book:
+    language: english
+    template: null
+    toc: true
+    tof: true
+    includes:
+      keep_tex: true
+  bookdown::word_document2:
+    toc: false
+    reference_docx: docx/recoverytemplate.docx
+    language: english
+classoption: openany, a4paper, oneside
+lang: en
+papersize: a4
+fontsize: "fontsize=13pt"
+linestretch: 1.1
+urlcolor: blue
+linkcolor: blue
+geometry: "left=3cm, right=3cm, top=2.5cm, bottom=2.5cm"
+bibliography: [book.bib, packages.bib, antal.bib, ccipolicy.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
