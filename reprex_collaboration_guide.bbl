@@ -1,0 +1,48 @@
+\begin{thebibliography}{}
+
+\bibitem[Antal, 2021a]{R-iotables}
+Antal, D. (2021a).
+\newblock {\em iotables: Importing and Manipulating Symmetric Input-Output
+  Tables}.
+\newblock R package version 0.4.3.
+
+\bibitem[Antal, 2021b]{R-regions}
+Antal, D. (2021b).
+\newblock {\em regions: Processing Regional Statistics}.
+\newblock R package version 0.1.6.
+
+\bibitem[Antal, 2021c]{R-retroharmonize}
+Antal, D. (2021c).
+\newblock {\em retroharmonize: Ex Post Survey Data Harmonization}.
+\newblock R package version 0.1.15.
+
+\bibitem[D'Ignazio and Klein, 2020]{data_feminism}
+D'Ignazio, C. and Klein, L. (2020).
+\newblock {\em Weapons of Math Destruction: How Big Data Increases Inequality
+  and Threatens Democracy}.
+\newblock MIT Press, Boston:USA.
+
+\bibitem[O'Neil, 2016]{weapons_of_math_destruction}
+O'Neil, C. (2016).
+\newblock {\em Weapons of Math Destruction: How Big Data Increases Inequality
+  and Threatens Democracy}.
+\newblock Crown Publishing Group, USA.
+
+\bibitem[Pomerantz, 2015]{pomerantz_2015}
+Pomerantz, J. (2015).
+\newblock {\em Metadata}.
+\newblock The MIT Press.
+
+\bibitem[Xie, 2015]{xie2015}
+Xie, Y. (2015).
+\newblock {\em Dynamic Documents with {R} and knitr}.
+\newblock Chapman and Hall/CRC, Boca Raton, Florida, 2nd edition.
+\newblock ISBN 978-1498716963.
+
+\bibitem[Xie, 2020]{R-bookdown}
+Xie, Y. (2020).
+\newblock {\em bookdown: Authoring Books and Technical Documents with R
+  Markdown}.
+\newblock R package version 0.21.
+
+\end{thebibliography}

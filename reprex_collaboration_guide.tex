@@ -7,7 +7,7 @@
   fontsize=13pt,
   english,
   a4paper,
-  openany, a4paper, oneside]{article}
+  openany, a4paper, oneside]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{setspace}
@@ -139,13 +139,13 @@
 
 {
 \hypersetup{linkcolor=}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 }
 \setstretch{1.1}
 \hypertarget{welcome}{%
-\section*{Welcome}\label{welcome}}
-\addcontentsline{toc}{section}{Welcome}
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
 
 \texttt{I\ didn\textquotesingle{}t\ have\ time\ to\ write\ a\ short\ letter,\ so\ I\ wrote\ a\ long\ one\ instead.} --- \emph{Mark Twain}
 
@@ -155,15 +155,17 @@ Most of this long-form documentation is intended for collaborators who write cod
 
 Open collaboration is an agile project management method that breaks up the tasks to small, independent, decentralized acts that can be performed by individuals or research groups. It requires a solid shared knowledge base and a very high quality documentation. This collaboration guide serves two goals: to practice this documentation workflow, and to create a continuously improved documentation for our collaboration methods and practices.
 
+We \protect\hyperlink{pledge}{pledge} to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. We ask you to contribute to the growth of our open collaboration, and we would like to contribute to your growth. We would love to work with your favorite \protect\hyperlink{data-curation}{data}, add your inspiring reading and listening \protect\hyperlink{inspiration}{recommendations} to this guide and cite your \protect\hyperlink{bibliography}{work} throughout or publications.
+
 \hypertarget{intro}{%
-\section{Introduction}\label{intro}}
+\chapter{Introduction}\label{intro}}
 
 Provided that you use whatever IDE and Git/Github, there is unlikely that this guide will pose any challenge for you. Markdown and YAML are very simple, special-purpose markdown ``languages'' (the language is a big word here) that you can learn in 1-2 hours. They create marked up text, which we use for a hypertextual reference guide.
 
 To collaboration on our software data products, there are other skills necessary, but for documentation and publication, technically you can get started with a clean text editor and git. We have a \protect\hyperlink{simple-intro}{Simplified Introduction} for you, which shows what can you skip in the rest of the document -- almost everything. But do not skip this \protect\hyperlink{intro}{Introduction}.
 
 \hypertarget{definitions}{%
-\subsection{Definitions}\label{definitions}}
+\section{Definitions}\label{definitions}}
 
 \begin{itemize}
 \item
@@ -176,8 +178,8 @@ To collaboration on our software data products, there are other skills necessary
   \texttt{Metadata}: It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. We use the distinction of descriptive, administrative, structural, preservation, and use metadata. See \protect\hyperlink{metadata}{metadata}.
 \end{itemize}
 
-\hypertarget{code-of-conduct}{%
-\subsection{Code of Conduct}\label{code-of-conduct}}
+\hypertarget{pledge}{%
+\section{Code of Conduct}\label{pledge}}
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
@@ -191,10 +193,10 @@ diverse, inclusive, and healthy community.
 *If you work with us, you must adhere to the \protect\hyperlink{covenant}{Contributor Covenant Code of Conduct}
 
 \hypertarget{collaboration-tools}{%
-\subsection{Collaboration Tools}\label{collaboration-tools}}
+\section{Collaboration Tools}\label{collaboration-tools}}
 
 \hypertarget{keybase}{%
-\subsubsection{Instant messaging: Keybase}\label{keybase}}
+\subsection{Instant messaging: Keybase}\label{keybase}}
 
 Keybase is a very neat, simple, lightweight team management / chat / social networking application that is extremely focused on privacy, security and encryption.
 
@@ -211,8 +213,9 @@ Keybase is a very neat, simple, lightweight team management / chat / social netw
 \end{itemize}
 
 -K-Drive (similar to OneDrive, Google Drive, Dropbox) -- only for our team, and fully encrypted;
-Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
-An integration with other platforms;
+- Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
+- An integration with other platforms.
+
 It is neat, open source, simple, clean, and usually appreciated more in the open source community than Slack, its big corporation rival.
 
 Practical steps you need to follow to use Keybase
@@ -278,7 +281,7 @@ Each big team has four special members for a smooth transition: Daniel and Zuzan
 \emph{Let's keep things short, give access to the full picture when needed, and let you find out what mix of response time, details and filters works best for you.}
 
 \hypertarget{github}{%
-\subsubsection{Git \& Github}\label{github}}
+\subsection{Git \& Github}\label{github}}
 
 Git is a simultaneous collaboration for for any distributed team work - writing, programming, design work. Git is an open source software which makes sure that your teamwork files are always synchronized, clashes are avoided (you modify the same part of a file at the same time with Daniel.) The only hard part to move to Git is to make sure that Git properly works on your computer - it needs to be installed differently on all Linux distros, Mac OSX version all Windows versions. On Windows, you must make sure that Git is on the startup path. Once you are there, you'll life will be much easier.
 
@@ -302,7 +305,7 @@ Github is not the only service platform that allows distributed, collaborative t
 \end{itemize}
 
 \hypertarget{rstudio-ide-other-ide}{%
-\subsubsection{Rstudio IDE \& other IDE}\label{rstudio-ide-other-ide}}
+\subsection{Rstudio IDE \& other IDE}\label{rstudio-ide-other-ide}}
 
 Our recommended IDE for documentation purposes is RStudio. You must install R, RStudio at least to make it work. For PDF outputs, you need to add a pdf compiler (recommended: tinytex, a lightweight tex compiler.) If you want to run Python code within RStudio, you need to have Pyhton installed on your computer, too. If you work in documentation and publishing, think about RStudio as a word processor that can save your work in html, pdf, Word, epub, keynote, PowerPoint, or any OpenOffice or Apple formats.
 
@@ -311,7 +314,7 @@ We work with data in the R and Python language, and we are open for C++, too. Ou
 This heterogeneous workflow is best served in RStudio. While you can write code in your favorite IDE in Python and/or C++, RStudio is unrivaled in its capability to connect various markup languages and several programming languages. Therefore, for documentation purposes, we use RStudio. You can contribute in any other editor -- our longform documentation and our website content is, after all, marked-up text. If you need to execute something for within the documentation, only RStudio will do the trick.
 
 \hypertarget{simple-intro}{%
-\subsection{Simple Introduction}\label{simple-intro}}
+\section{Simple Introduction}\label{simple-intro}}
 
 \begin{quote}
 This part is intendend for collaborators who do not write regularly code, and do not use markdown, LaTeX in their work.
@@ -320,7 +323,7 @@ This part is intendend for collaborators who do not write regularly code, and do
 You will likely work with \protect\hyperlink{data-curation}{data curation} and \protect\hyperlink{documentation}{documentation, publications} which is equally important to developing code.
 
 \hypertarget{markdown}{%
-\subsubsection{Markdown}\label{markdown}}
+\subsection{Markdown}\label{markdown}}
 
 Markdown is a simple ``language'', or rather a writing notation system that lets the word processor know that \texttt{*italics*} means \emph{italics}, or \texttt{**bold**} means \textbf{bold} or \texttt{\#\#\ Writing,\ blogging} becomes a level 2 heading, and \texttt{\#\#\#\ Markdown\ \{\#markdown\}} is a level 3 heading that can be referenced in the table of contents or internal hypertext links with \texttt{{[}Jump\ to\ markdown\ introduction{]}(\#markdown)}.
 
@@ -365,20 +368,20 @@ RStudio uses the Rmarkdown, a special version of markdown, where you can insert 
 \end{itemize}
 
 \hypertarget{inspiration}{%
-\subsection{Inspiration \& Recommended Reading}\label{inspiration}}
+\section{Inspiration \& Recommended Reading}\label{inspiration}}
 
 \hypertarget{books}{%
-\subsubsection{Books}\label{books}}
+\subsection{Books}\label{books}}
 
 \hypertarget{why-weapons-of-math-destruction}{%
-\paragraph{Why: Weapons of Math Destruction}\label{why-weapons-of-math-destruction}}
+\subsubsection{Why: Weapons of Math Destruction}\label{why-weapons-of-math-destruction}}
 
 Weapons of math destruction, which O'Neil refers to throughout the book as WMDs, are mathematical models or algorithms that claim to quantify important traits: teacher quality, recidivism risk, creditworthiness but have harmful outcomes and often reinforce inequality, keeping the poor poor and the rich rich. They have three things in common: opacity, scale, and damage \citep{weapons_of_math_destruction}.
 
 \url{https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/}
 
 \hypertarget{how-metadata}{%
-\paragraph{How: Metadata}\label{how-metadata}}
+\subsubsection{How: Metadata}\label{how-metadata}}
 
 Metadata describes all the information that we collect, storeand disseminate in the forms of tables, maps, charts, apps, articles and books. Metadata is not data, it is the organization of data that is ready for use, publication, archiving or other purposes.
 
@@ -387,12 +390,12 @@ We follow the metadata definition and concepts of \href{https://mitpress.mit.edu
 It is not, Pomerantz tell us, just ``data about data.'' It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. When metadata does its job well, it fades into the background; everyone (except perhaps the NSA) takes it for granted.
 
 \hypertarget{critically-data-feminism}{%
-\paragraph{Critically: Data Feminism}\label{critically-data-feminism}}
+\subsubsection{Critically: Data Feminism}\label{critically-data-feminism}}
 
 Critical attitude to working with with big data and AI: \href{https://mitpressonpubpub.mitpress.mit.edu/data-feminism}{Data Feminism}. This is a much celebrated book, and with a good reason. It views AI and data problems with a feminist point of view, but the examples and the toolbox can be easily imagined for small-country biases, racial, ethnic, or small enterprise problems. A very good introduction to the injustice of big data and the fight for a more fair use of data \citep{data_feminism}.
 
 \hypertarget{blogposts}{%
-\subsubsection{Blog posts \& Podcasts}\label{blogposts}}
+\subsection{Blog posts \& Podcasts}\label{blogposts}}
 
 ``big data increases inequality and threatens democracy.'' With Facebook's new \href{http://qz.com/769413/heres-how-facebooks-automated-trending-bar-probably-works/}{trending topics algorithm} and \href{https://medium.com/equal-future/predictive-policing-is-happening-now-and-police-could-learn-a-real-lesson-from-minority-report-e105a592eda0\#.h90q9xoqx}{data-driven policing} in the news, the book is certainly timely.
 
@@ -408,37 +411,37 @@ Any single episode of the now discontinued What's the Point Podcast: \url{https:
 \end{itemize}
 
 \hypertarget{data-curation}{%
-\section{Data Curation}\label{data-curation}}
+\chapter{Data Curation}\label{data-curation}}
 
 We are constantly looking for new data sources that may be interesting to our partners or for our own R\&D activities.
 
 \hypertarget{acquisition}{%
-\section{Data Acquistion}\label{acquisition}}
+\chapter{Data Acquistion}\label{acquisition}}
 
 Whatever is the source of the data we use it, we never trust it fully. We need check its strength and weaknesses, and bring it to a complete, documented and tidy form.
 
 \hypertarget{collect-metadata}{%
-\subsection{Metadata}\label{collect-metadata}}
+\section{Metadata}\label{collect-metadata}}
 
 Metadata plays an important role to find whatever we acquired and use it properly. It plays an important role during the storage of data in our \protect\hyperlink{data-storage}{databases} and in \protect\hyperlink{documentation}{documentation and publication}, too. We placed it into a \protect\hyperlink{metadata}{separate chapter}.
 
 \hypertarget{eurostat}{%
-\subsection{Eurostat}\label{eurostat}}
+\section{Eurostat}\label{eurostat}}
 
 \hypertarget{harmonized-survey-programs}{%
-\subsection{Harmonized Survey Programs}\label{harmonized-survey-programs}}
+\section{Harmonized Survey Programs}\label{harmonized-survey-programs}}
 
 \hypertarget{music-apis}{%
-\subsection{Music APIs}\label{music-apis}}
+\section{Music APIs}\label{music-apis}}
 
 \hypertarget{spotify-api}{%
-\subsubsection{Spotify API}\label{spotify-api}}
+\subsection{Spotify API}\label{spotify-api}}
 
 \hypertarget{bandcamp}{%
-\subsubsection{Bandcamp}\label{bandcamp}}
+\subsection{Bandcamp}\label{bandcamp}}
 
 \hypertarget{data-storage}{%
-\section{Data Storage \& Databases}\label{data-storage}}
+\chapter{Data Storage \& Databases}\label{data-storage}}
 
 We may pursue several data storage philosophies.
 
@@ -457,35 +460,35 @@ Placing data in a database, particularly a not very well documented database goe
 We always must keep the right balance between the advantages of using a database and the advantages of a fully transparent and readable data workflow. We must balanace the documentation burden of a constantly updated database with keeping the process as a documentation and not hiding immediate results in a database.
 
 \hypertarget{storage-metadata}{%
-\subsection{Metadata}\label{storage-metadata}}
+\section{Metadata}\label{storage-metadata}}
 
 Metadata plays an important role in our \protect\hyperlink{data-storage}{databases} and in \protect\hyperlink{documentation}{documentation}, too. We placed it into a \protect\hyperlink{metadata}{separate chapter}.
 
 \hypertarget{dta-raw}{%
-\subsection{Raw data assets}\label{dta-raw}}
+\section{Raw data assets}\label{dta-raw}}
 
 \hypertarget{processed-individual-data}{%
-\subsection{Processed, individual data}\label{processed-individual-data}}
+\section{Processed, individual data}\label{processed-individual-data}}
 
 \hypertarget{indicators---statistically-processed-data}{%
-\subsection{Indicators - statistically processed data}\label{indicators---statistically-processed-data}}
+\section{Indicators - statistically processed data}\label{indicators---statistically-processed-data}}
 
 \hypertarget{periodic-data-releases}{%
-\subsection{Periodic data releases}\label{periodic-data-releases}}
+\section{Periodic data releases}\label{periodic-data-releases}}
 
 \hypertarget{interactive-data-releases}{%
-\subsection{Interactive data releases}\label{interactive-data-releases}}
+\section{Interactive data releases}\label{interactive-data-releases}}
 
 \hypertarget{continous-data-releases-in-api}{%
-\subsection{Continous data releases in API}\label{continous-data-releases-in-api}}
+\section{Continous data releases in API}\label{continous-data-releases-in-api}}
 
 \hypertarget{applications}{%
-\section{Applications}\label{applications}}
+\chapter{Applications}\label{applications}}
 
 We process and release data to be used in various business, policy and scientific applications. In this collaboration guideline we do not want to document these applications - they are very specific to the problem, domain or client. The aim of this guideline to make the data collection, processing and dissemination workflow open for collaborators. The aim of this collaboration is to create high-quality, timely and well-documented data assets for various applications. We add application-specific information here to the extent that it helps data collaboration.
 
 \hypertarget{naming-conventions}{%
-\subsection{File, Variable Names, Value Labels}\label{naming-conventions}}
+\section{File, Variable Names, Value Labels}\label{naming-conventions}}
 
 \begin{quote}
 There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton
@@ -496,7 +499,7 @@ We are mainly naming things when we name a path to a file (subdirectory and file
 In recent reproducible science practice there have been many attempts to standardize variable naming. Because different (programming) languages have different well-established cultures, and naming things is a cognitive process, a full harmonization is not possible, but a high-level of harmonization already can save many-many hours in code writing, analysis and debugging.
 
 \hypertarget{path}{%
-\subsubsection{Path}\label{path}}
+\subsection{Path}\label{path}}
 
 Because our final output is often an automatically created website (in the go language, using the hugo server application), we must be very aware of the entire path. A hugo website contains that website metadata in the path - the relative position of a file tells the server what is the aim of the file.
 
@@ -522,7 +525,7 @@ In websites only:
 Hugo has its own relative path system.
 
 \hypertarget{R-guide}{%
-\paragraph{R language}\label{R-guide}}
+\subsubsection{R language}\label{R-guide}}
 
 Consider the two identical meaning R code:
 
@@ -539,7 +542,7 @@ On CRAN, only the latter is permissible for publication? Why? Because the variou
 The function \texttt{file.path()} in R makes sure that on any R-supported platforms your code will thy to read \texttt{my-csv.csv} from the relative \texttt{data-raw} path.
 
 \hypertarget{variable-nameing-styles}{%
-\subsubsection{Variable nameing styles}\label{variable-nameing-styles}}
+\subsection{Variable nameing styles}\label{variable-nameing-styles}}
 
 We prefer the \texttt{snake\_case\_naming\_convention} with lowercase letters. The names should omit stopwords, whenever possible, remain as short as possible. The organization of the name should help simple variable name selection rules, such as \texttt{starts\_with()} or \texttt{ends\_with()} in the tidyverse - this helps programming a great deal!
 
@@ -575,50 +578,50 @@ Again, when updating/querying a database, the best if database columns need not 
 The \texttt{lower\_snake\_case} is a partly subjective choice. The lowercase is usually a very natural compromise between \texttt{UPPERCASE}, or \texttt{camelCase} naming conventions, and the renaming can happen with simple programmatic ways. In the R language we use the package \texttt{snakecase} for this, which translates a text or caption to any case you want - title case, camel case, snake case.
 
 \hypertarget{character-coding}{%
-\subsubsection{Character coding}\label{character-coding}}
+\subsection{Character coding}\label{character-coding}}
 
 Character coding is an unresolved problem of the world. We use \texttt{UTF-8} whatever it means, and we pray that our products will be readable on all platforms.
 
 \hypertarget{statistical-software}{%
-\subsection{Statistical Processing \& Indicators}\label{statistical-software}}
+\section{Statistical Processing \& Indicators}\label{statistical-software}}
 
 All our critical processing code goes through anonymous peer-review on CRAN. We take pride in the fact that our software goes through dozens of unit-tests and a human review and it can be tested by anybody.
 
 \hypertarget{retroharmonize}{%
-\subsubsection{retroharmonize}\label{retroharmonize}}
+\subsection{retroharmonize}\label{retroharmonize}}
 
 The aim of \href{https://reprex.nl/software/retroharmonize/}{retroharmonize} is to provide tools for reproducible retrospective (ex-post) harmonization of datasets that contain variables measuring the same concepts but coded in different ways. Ex-post data harmonization enables better use of existing data and creates new research opportunities. For example, harmonizing data from different countries enables cross-national comparisons, while merging data from different time points makes it possible to track changes over time. \citep{R-retroharmonize}
 
 It has two peer-reviewed releases.
 
 \hypertarget{regions}{%
-\subsubsection{regions}\label{regions}}
+\subsection{regions}\label{regions}}
 
 The \href{https://reprex.nl/software/regions/}{regions} package is an offspring of the eurostat package on \href{https://github.com/rOpenGov}{rOpenGov}. It started as a tool to validate and re-code regional Eurostat statistics, but it aims to be a general solution for all sub-national statistics. It will be developed parallel with other rOpenGov packages. \citep{R-regions}
 
 It has one peer-reviewed release.
 
 \hypertarget{iotables}{%
-\subsubsection{iotables}\label{iotables}}
+\subsection{iotables}\label{iotables}}
 
 \href{https://reprex.nl/software/iotables/}{iotables} processes all the symmetric input-output tables of the EU member states, and calculates direct, indirect and induced effects, multipliers for GVA, employment, taxation. These are important inputs into policy evaluation, business forecasting, or granting/development indicator design. iotables is used by about 800 experts around the world. \citep{R-iotables}
 
 It has several peer-reviewed releases.
 
 \hypertarget{machine-learning}{%
-\subsection{Machine Learning Applications}\label{machine-learning}}
+\section{Machine Learning Applications}\label{machine-learning}}
 
 \hypertarget{listen-local-app}{%
-\subsubsection{Listen Local app}\label{listen-local-app}}
+\subsection{Listen Local app}\label{listen-local-app}}
 
 \hypertarget{bandcamp-librarian-app}{%
-\subsubsection{Bandcamp Librarian app}\label{bandcamp-librarian-app}}
+\subsection{Bandcamp Librarian app}\label{bandcamp-librarian-app}}
 
 \hypertarget{documentation}{%
-\section{Documentation And Publications}\label{documentation}}
+\chapter{Documentation And Publications}\label{documentation}}
 
-\hypertarget{citations-bibliography}{%
-\subsection{Citations, Bibliography}\label{citations-bibliography}}
+\hypertarget{bibliography}{%
+\section{Citations, Bibliography}\label{bibliography}}
 
 For any external literature, data source, please, store the citation information in a well-formatted, thematic \texttt{.bib} files.
 
@@ -646,8 +649,12 @@ We create programatically \texttt{.bib} citation information files for our data 
 
 Marking up a reference to \citep{R-retroharmonize} with \texttt{{[}@R-retroharmonize{]}} will place the citation in your selected format (here APA) to the text, and to the \protect\hyperlink{references}{references} at the end of this documentation.
 
+\textbf{We would love to cite your work}. Please, create a well-formatted \texttt{.bib} file with your publications about the best use of data, creation of data, scientific analysis of data, etc, and save it to this repo as \texttt{name-surname.bib}.
+
+Make sure that each \texttt{.bib} entry contains at least the \texttt{title}, \texttt{author} and \texttt{year} fields.
+
 \hypertarget{software-releases}{%
-\subsection{Software Releases}\label{software-releases}}
+\section{Software Releases}\label{software-releases}}
 
 We have so far three released software products.
 
@@ -664,24 +671,24 @@ We have so far three released software products.
 They are released on CRAN, and they follow the CRAN guidelines for unit-testing and human review. As CRAN relies on extensive automated testing, the formatting standard is \emph{very strict} both for the software code and its documentation. The slightest deviation results in rejection.
 
 \hypertarget{documentation-metadata}{%
-\subsection{Metadata}\label{documentation-metadata}}
+\section{Metadata}\label{documentation-metadata}}
 
 Metadata plays an important role in our \protect\hyperlink{data-storage}{databases} and in \protect\hyperlink{documentation}{documentation}, too. We placed it into a \protect\hyperlink{metadata}{separate chapter}.
 
 \hypertarget{data-release}{%
-\subsection{Data releases}\label{data-release}}
+\section{Data releases}\label{data-release}}
 
 We currently work with two platforms, and we must maintain compatibility with data repositories that our clients use. Both provide some validation, version control, and give a standard \textbf{doi} to our releases.
 
 \hypertarget{dataverse}{%
-\subsubsection{Dataverse}\label{dataverse}}
+\subsection{Dataverse}\label{dataverse}}
 
 \href{https://dataverse.org/}{dataverse.org/} has a well-supported API, and this is the choice of our first academic partner, IViR.
 
 The Dataverse Project is being developed at Harvard's Institute for Quantitative Social Science (IQSS), along with many collaborators and contributors worldwide. The Dataverse Project was built on our experience with our earlier Virtual Data Center (VDC) project, which spanned 1997-2006 as a collaboration between the Harvard-MIT Data Center (now part of IQSS) and the Harvard University Library. Precursors to the VDC date to 1987, comprising such entities as pre-web software to automatically transfer cataloging information by FTP to other sites across campus automatically at designated times, and before that to a stand-alone software guide to local data.
 
 \hypertarget{zenodo}{%
-\subsubsection{Zenodo}\label{zenodo}}
+\subsection{Zenodo}\label{zenodo}}
 
 \href{https://zenodo.org/}{zenodo} is the choice of the European Union, and it is likely that in the future all EU-financed research data must be published here.
 
@@ -690,12 +697,12 @@ The OpenAIRE project, in the vanguard of the open access and open data movements
 In support of its research programme CERN has developed tools for Big Data management and extended Digital Library capabilities for Open Data. Through Zenodo these Big Science tools could be effectively shared with the long-tail of research.
 
 \hypertarget{publications}{%
-\subsection{Publications}\label{publications}}
+\section{Publications}\label{publications}}
 
 Our work is often embedded in publications. We want to make the application of various formatting guidelines as painless as possible. This is one of the main motivations to use markdown and Rmarkdown to document our work. There are more and more conversion tools that automatically convert our longform documentation from markdown or Rmarkdown to the formatting standards of almost any scientific publisher.
 
 \hypertarget{metadata}{%
-\section{Metadata}\label{metadata}}
+\chapter{Metadata}\label{metadata}}
 
 We follow the metadata definition and concepts of \href{https://mitpress.mit.edu/books/metadata}{Metadata} from the MIT Press Essential Knowledge series.
 
@@ -704,10 +711,10 @@ It is not, Pomerantz tell us, just ``data about data.'' It is a means by which t
 Pomerantz explains what metadata is, and why it exists. He distinguishes among different types of metadata---descriptive, administrative, structural, preservation, and use---and examines different users and uses of each type. He discusses the technologies that make modern metadata possible, and he speculates about metadata's future. By the end of the book, readers will see metadata everywhere. Because, Pomerantz warns us, it's metadata's world, and we are just living in it.
 
 \hypertarget{covenant}{%
-\section{Contributor Covenant Code of Conduct}\label{covenant}}
+\chapter{Contributor Covenant Code of Conduct}\label{covenant}}
 
 \hypertarget{our-pledge}{%
-\subsection{Our Pledge}\label{our-pledge}}
+\section{Our Pledge}\label{our-pledge}}
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
@@ -719,7 +726,7 @@ We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
 \hypertarget{our-standards}{%
-\subsection{Our Standards}\label{our-standards}}
+\section{Our Standards}\label{our-standards}}
 
 Examples of behavior that contributes to a positive environment for our
 community include:
@@ -760,7 +767,7 @@ Examples of unacceptable behavior include:
 \end{itemize}
 
 \hypertarget{enforcement-responsibilities}{%
-\subsection{Enforcement Responsibilities}\label{enforcement-responsibilities}}
+\section{Enforcement Responsibilities}\label{enforcement-responsibilities}}
 
 Community leaders are responsible for clarifying and enforcing our standards of
 acceptable behavior and will take appropriate and fair corrective action in
@@ -773,7 +780,7 @@ not aligned to this Code of Conduct, and will communicate reasons for moderation
 decisions when appropriate.
 
 \hypertarget{scope}{%
-\subsection{Scope}\label{scope}}
+\section{Scope}\label{scope}}
 
 This Code of Conduct applies within all community spaces, and also applies when
 an individual is officially representing the community in public spaces.
@@ -782,7 +789,7 @@ posting via an official social media account, or acting as an appointed
 representative at an online or offline event.
 
 \hypertarget{enforcement}{%
-\subsection{Enforcement}\label{enforcement}}
+\section{Enforcement}\label{enforcement}}
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
@@ -793,13 +800,13 @@ All community leaders are obligated to respect the privacy and security of the
 reporter of any incident.
 
 \hypertarget{enforcement-guidelines}{%
-\subsection{Enforcement Guidelines}\label{enforcement-guidelines}}
+\section{Enforcement Guidelines}\label{enforcement-guidelines}}
 
 Community leaders will follow these Community Impact Guidelines in determining
 the consequences for any action they deem in violation of this Code of Conduct:
 
 \hypertarget{correction}{%
-\subsubsection{1. Correction}\label{correction}}
+\subsection{1. Correction}\label{correction}}
 
 \textbf{Community Impact}: Use of inappropriate language or other behavior deemed
 unprofessional or unwelcome in the community.
@@ -809,7 +816,7 @@ clarity around the nature of the violation and an explanation of why the
 behavior was inappropriate. A public apology may be requested.
 
 \hypertarget{warning}{%
-\subsubsection{2. Warning}\label{warning}}
+\subsection{2. Warning}\label{warning}}
 
 \textbf{Community Impact}: A violation through a single incident or series
 of actions.
@@ -822,7 +829,7 @@ like social media. Violating these terms may lead to a temporary or
 permanent ban.
 
 \hypertarget{temporary-ban}{%
-\subsubsection{3. Temporary Ban}\label{temporary-ban}}
+\subsection{3. Temporary Ban}\label{temporary-ban}}
 
 \textbf{Community Impact}: A serious violation of community standards, including
 sustained inappropriate behavior.
@@ -834,7 +841,7 @@ with those enforcing the Code of Conduct, is allowed during this period.
 Violating these terms may lead to a permanent ban.
 
 \hypertarget{permanent-ban}{%
-\subsubsection{4. Permanent Ban}\label{permanent-ban}}
+\subsection{4. Permanent Ban}\label{permanent-ban}}
 
 \textbf{Community Impact}: Demonstrating a pattern of violation of community
 standards, including sustained inappropriate behavior, harassment of an
@@ -844,7 +851,7 @@ individual, or aggression toward or disparagement of classes of individuals.
 the community.
 
 \hypertarget{attribution}{%
-\subsection{Attribution}\label{attribution}}
+\section{Attribution}\label{attribution}}
 
 This Code of Conduct is adapted from the \href{https://www.contributor-covenant.org}{Contributor Covenant},
 version 2.0, available at
@@ -858,15 +865,15 @@ For answers to common questions about this code of conduct, see the FAQ at
 at \url{https://www.contributor-covenant.org/translations}.
 
 \hypertarget{appendix}{%
-\section{Appendix}\label{appendix}}
+\chapter{Appendix}\label{appendix}}
 
 \hypertarget{markdown-1}{%
-\subsection{Markdown}\label{markdown-1}}
+\section{Markdown}\label{markdown-1}}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
 \hypertarget{bookdown}{%
-\subsection{Bookdown}\label{bookdown}}
+\section{Bookdown}\label{bookdown}}
 
 The \textbf{bookdown} package can be installed from CRAN or Github:
 
@@ -880,7 +887,7 @@ The \textbf{bookdown} package can be installed from CRAN or Github:
 
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}.
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -900,7 +907,7 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 \caption{Here is a nice figure!}\label{fig:nice-fig}
 \end{figure}
 
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
+Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nicetab}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -913,7 +920,7 @@ Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., 
 
 \begin{table}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
+\caption{\label{tab:nicetab}Here is a nice table!}
 \centering
 \begin{tabular}[t]{rrrrl}
 \toprule
@@ -949,10 +956,10 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{tinytex}{%
-\subsection{Tinytex}\label{tinytex}}
+\section{Tinytex}\label{tinytex}}
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
 
-  \bibliography{book.bib,packages.bib,antal.bib,ccipolicy.bib}
+  \bibliography{book.bib,packages.bib,antal.bib,ccipolicy.bib,datascience.bib}
 
 \end{document}

@@ -1,0 +1,72 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{Welcome}{2}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Definitions}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Code of Conduct}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Collaboration Tools}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Instant messaging: Keybase}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Git \& Github}{5}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Rstudio IDE \& other IDE}{5}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Simple Introduction}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Markdown}{6}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Inspiration \& Recommended Reading}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Books}{7}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}Why: Weapons of Math Destruction}{7}{subsubsection.1.5.1.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}How: Metadata}{7}{subsubsection.1.5.1.2}%
+\contentsline {subsubsection}{\numberline {1.5.1.3}Critically: Data Feminism}{7}{subsubsection.1.5.1.3}%
+\contentsline {subsection}{\numberline {1.5.2}Blog posts \& Podcasts}{8}{subsection.1.5.2}%
+\contentsline {chapter}{\numberline {2}Data Curation}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Data Acquistion}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Metadata}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Eurostat}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Harmonized Survey Programs}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Music APIs}{10}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Spotify API}{10}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Bandcamp}{10}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Data Storage \& Databases}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Metadata}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Raw data assets}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Processed, individual data}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Indicators - statistically processed data}{12}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Periodic data releases}{12}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Interactive data releases}{12}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Continous data releases in API}{12}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Applications}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}File, Variable Names, Value Labels}{13}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Path}{13}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}R language}{14}{subsubsection.5.1.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Variable nameing styles}{14}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Character coding}{15}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Statistical Processing \& Indicators}{15}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}retroharmonize}{15}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}regions}{15}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}iotables}{15}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Machine Learning Applications}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Listen Local app}{15}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Bandcamp Librarian app}{15}{subsection.5.3.2}%
+\contentsline {chapter}{\numberline {6}Documentation And Publications}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Citations, Bibliography}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Software Releases}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Metadata}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Data releases}{17}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Dataverse}{17}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Zenodo}{17}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Publications}{17}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Metadata}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Contributor Covenant Code of Conduct}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Our Pledge}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Our Standards}{20}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Enforcement Responsibilities}{20}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Scope}{21}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Enforcement}{21}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Enforcement Guidelines}{21}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}1. Correction}{21}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}2. Warning}{21}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}3. Temporary Ban}{21}{subsection.8.6.3}%
+\contentsline {subsection}{\numberline {8.6.4}4. Permanent Ban}{22}{subsection.8.6.4}%
+\contentsline {section}{\numberline {8.7}Attribution}{22}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Appendix}{23}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Markdown}{23}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Bookdown}{23}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Tinytex}{24}{section.9.3}%

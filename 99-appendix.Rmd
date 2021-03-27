@@ -25,9 +25,9 @@ par(mar = c(4, 4, .1, .1))
 plot(pressure, type = 'b', pch = 19)
 ```
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nicetab).
 
-```{r nice-tab, tidy=FALSE}
+```{r nicetab, tidy=FALSE}
 knitr::kable(
   head(iris, 20), caption = 'Here is a nice table!',
   booktabs = TRUE
@@ -40,4 +40,12 @@ You can write citations, too. For example, we are using the **bookdown** package
 ## Tinytex 
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+
+You can install and integrate TinyTex with R with the help of the `tinytex` package.
+
+```{r tinytex, eval=FALSE}
+require(tinytex)
+tinytex::install_tinytex()
+```
+
 
