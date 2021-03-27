@@ -116,7 +116,9 @@ It has several peer-reviewed releases.
 ## Machine Learning Applications {#machine-learning}
 
 
-### Listen Local app
+### Listen Local app {#listen-local}
 
 
-### Bandcamp Librarian app
+### Bandcamp Librarian app {#bandcamp-librarian}
+
+## Maps {#maps}
