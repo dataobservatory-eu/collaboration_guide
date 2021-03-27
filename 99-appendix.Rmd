@@ -41,7 +41,7 @@ You can write citations, too. For example, we are using the **bookdown** package
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
 
-You can install and integrate TinyTex with R with the help of the `tinytex` package.
+You can install and integrate TinyTex with R with the help of the `tinytex` package. It installs TinyTex and some basic tex libraries from CTAN that are required for 
 
 ```{r tinytex, eval=FALSE}
 require(tinytex)

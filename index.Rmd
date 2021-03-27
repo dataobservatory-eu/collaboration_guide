@@ -44,6 +44,8 @@ Open collaboration is an agile project management method that breaks up the task
 
 We [pledge](#pledge) to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. We ask you to contribute to the growth of our open collaboration, and we would like to contribute to your growth. We would love to work with your favorite [data](#data-curation), add your inspiring reading and listening [recommendations](#inspiration) to this guide and cite your [work](#bibliography) throughout or publications.
 
+You can edit yourselft this guide on [github](https://github.com/dataobservatory-eu/collaboration_guide/). The html, [epub](https://open-collaboration-guide.dataobservatory.eu/reprex_collaboration_guide.docx), [docx](https://open-collaboration-guide.dataobservatory.eu/reprex_collaboration_guide.docx) and pdf versions can be found on [open-collaboration-guide.dataobservatory.eu](https://open-collaboration-guide.dataobservatory.eu/). The pdf is not working.
+
 ```{r crate-bibliography, include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(

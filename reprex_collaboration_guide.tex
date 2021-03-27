@@ -960,6 +960,16 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
 
+You can install and integrate TinyTex with R with the help of the \texttt{tinytex} package. It installs TinyTex and some basic tex libraries from CTAN that are required for
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{require}\NormalTok{(tinytex)}
+\NormalTok{tinytex}\SpecialCharTok{::}\FunctionTok{install\_tinytex}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+
   \bibliography{book.bib,packages.bib,antal.bib,ccipolicy.bib,datascience.bib}
 
 \end{document}
