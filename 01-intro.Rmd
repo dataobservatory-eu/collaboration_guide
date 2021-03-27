@@ -14,7 +14,7 @@ To collaboration on our software data products, there are other skills necessary
 
 - `Metadata`: It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. We use the distinction of descriptive, administrative, structural, preservation, and use metadata. See [metadata](#metadata).
 
-## Code of Conduct
+## Code of Conduct {#pledge}
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
@@ -41,8 +41,9 @@ Starts a Google Meet or Zoom video call natively with a single command;
 - Team chat rooms in real time. You can filter where you want to be involved, and you can always opt-out;
 
 -K-Drive (similar to OneDrive, Google Drive, Dropbox) – only for our team, and fully encrypted;
-Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
-An integration with other platforms;
+- Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
+- An integration with other platforms.
+
 It is neat, open source, simple, clean, and usually appreciated more in the open source community than Slack, its big corporation rival.
 
 Practical steps you need to follow to use Keybase

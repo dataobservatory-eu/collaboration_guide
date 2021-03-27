@@ -3,8 +3,8 @@ title: "Open Collaboration Guide"
 author: ["Daniel Antal"]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+documentclass: book
 output: 
-  documentclass: book
   bookdown::gitbook: default
   bookdown::pdf_book:
     language: english
@@ -15,7 +15,7 @@ output:
       keep_tex: true
   bookdown::word_document2:
     toc: false
-    reference_docx: docx/recoverytemplate.docx
+    reference_docx: templates/collab-template.docx
     language: english
 classoption: openany, a4paper, oneside
 lang: en
@@ -25,7 +25,7 @@ linestretch: 1.1
 urlcolor: blue
 linkcolor: blue
 geometry: "left=3cm, right=3cm, top=2.5cm, bottom=2.5cm"
-bibliography: [book.bib, packages.bib, antal.bib, ccipolicy.bib]
+bibliography: [book.bib, packages.bib, antal.bib, ccipolicy.bib, datascience.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
@@ -42,8 +42,7 @@ Most of this long-form documentation is intended for collaborators who write cod
 
 Open collaboration is an agile project management method that breaks up the tasks to small, independent, decentralized acts that can be performed by individuals or research groups.  It requires a solid shared knowledge base and a very high quality documentation. This collaboration guide serves two goals: to practice this documentation workflow, and to create a continuously improved documentation for our collaboration methods and practices.
 
-
-
+We [pledge](#pledge) to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. We ask you to contribute to the growth of our open collaboration, and we would like to contribute to your growth. We would love to work with your favorite [data](#data-curation), add your inspiring reading and listening [recommendations](#inspiration) to this guide and cite your [work](#bibliography) throughout or publications.
 
 ```{r crate-bibliography, include=FALSE}
 # automatically create a bib database for R packages
