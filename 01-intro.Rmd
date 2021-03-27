@@ -1,5 +1,23 @@
 # Introduction {#intro}
 
+## Code of Conduct
+
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community. 
+
+*If you work with us, you must adhere to the [Contributor Covenant Code of Conduct](#covenant)
+
 ## IDE
 
 Our recommended IDE for documentation purposes is RStudio.  You must install R, RStudio at least to make it work.  For PDF outputs, you need to add a pdf compiler (recommended: tinytex, a lightweight tex compiler.) If you want to run Python code within RStudio, you need to have Pyhton installed on your computer, too.
+
+## Simple Introduction
+
+> This part is intendend for collaborators who do not write regularly code, and do not use markdown, LaTeX in their work.
+

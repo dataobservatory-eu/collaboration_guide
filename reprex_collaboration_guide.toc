@@ -1,0 +1,56 @@
+\selectlanguage *{english}
+\contentsline {section}{\numberline {1}Welcome}{1}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Code of Conduct}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}IDE}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Simple Introduction}{1}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Data Curation}{1}{section.3}%
+\contentsline {section}{\numberline {4}Data Acquistion}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Eurostat}{2}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Harmonized Survey Programs}{2}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Music APIs}{2}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Spotify API}{2}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Bandcamp}{2}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Data Storage \& Databases}{2}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Raw data assets}{2}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Processed, individual data}{2}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Indicators - statistically processed data}{2}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Periodic data releases}{2}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Interactive data releases}{2}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Continous data releases in API}{2}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Applications}{2}{section.6}%
+\contentsline {subsection}{\numberline {6.1}File, Variable Names, Value Labels}{2}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Path}{2}{subsubsection.6.1.1}%
+\contentsline {paragraph}{\numberline {6.1.1.1}R language}{2}{paragraph.6.1.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Variable nameing styles}{2}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Character coding}{2}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Statistical Processing \& Indicators}{2}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}retroharmonize}{2}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}regions}{2}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}iotables}{2}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Machine Learning Applications}{2}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Listen Local app}{2}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Bandcamp Librarian app}{2}{subsubsection.6.3.2}%
+\contentsline {section}{\numberline {7}Contributor Covenant Code of Conduct}{2}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Our Pledge}{2}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Our Standards}{3}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Enforcement Responsibilities}{3}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Scope}{3}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Enforcement}{3}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Enforcement Guidelines}{3}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}1. Correction}{4}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}2. Warning}{4}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}3. Temporary Ban}{4}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}4. Permanent Ban}{4}{subsubsection.7.6.4}%
+\contentsline {subsection}{\numberline {7.7}Attribution}{4}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Documentation}{4}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Citations, Bibliography}{4}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Software Releases}{4}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Data releases}{4}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Dataverse}{4}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Zenodo}{5}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Publications}{5}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Appendix}{5}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Markdown}{5}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Bookdown}{5}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Tinytex}{5}{subsection.9.3}%

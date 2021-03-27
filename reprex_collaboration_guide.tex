@@ -1,0 +1,422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+  fontsize=13pt,
+  english,
+  a4paper,
+  openany, a4paper, oneside]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Open Collaboration Guide},
+  pdfauthor={Daniel Antal},
+  pdflang={en},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[left=3cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifxetex
+  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\else
+  \usepackage[main=english]{babel}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\fi
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Open Collaboration Guide}
+\author{Daniel Antal}
+\date{2021-03-27}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.1}
+\hypertarget{welcome}{%
+\section{Welcome}\label{welcome}}
+
+Placeholder
+
+\hypertarget{intro}{%
+\section{Introduction}\label{intro}}
+
+\hypertarget{code-of-conduct}{%
+\subsection{Code of Conduct}\label{code-of-conduct}}
+
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
+
+*If you work with us, you must adhere to the \protect\hyperlink{covenant}{Contributor Covenant Code of Conduct}
+
+\hypertarget{ide}{%
+\subsection{IDE}\label{ide}}
+
+Our recommended IDE for documentation purposes is RStudio. You must install R, RStudio at least to make it work. For PDF outputs, you need to add a pdf compiler (recommended: tinytex, a lightweight tex compiler.) If you want to run Python code within RStudio, you need to have Pyhton installed on your computer, too.
+
+\hypertarget{simple-introduction}{%
+\subsection{Simple Introduction}\label{simple-introduction}}
+
+\begin{quote}
+This part is intendend for collaborators who do not write regularly code, and do not use markdown, LaTeX in their work.
+\end{quote}
+
+\hypertarget{data-curation}{%
+\section{Data Curation}\label{data-curation}}
+
+We are constantly looking for new data sources that may be interesting to our partners or for our own R\&D activities.
+
+\hypertarget{acquisition}{%
+\section{Data Acquistion}\label{acquisition}}
+
+Whatever is the source of the data we use it, we never trust it fully. We need check its strength and weaknesses, and bring it to a complete, documented and tidy form.
+
+\hypertarget{eurostat}{%
+\subsection{Eurostat}\label{eurostat}}
+
+\hypertarget{harmonized-survey-programs}{%
+\subsection{Harmonized Survey Programs}\label{harmonized-survey-programs}}
+
+\hypertarget{music-apis}{%
+\subsection{Music APIs}\label{music-apis}}
+
+\hypertarget{spotify-api}{%
+\subsubsection{Spotify API}\label{spotify-api}}
+
+\hypertarget{bandcamp}{%
+\subsubsection{Bandcamp}\label{bandcamp}}
+
+\hypertarget{data-storage-databases}{%
+\section{Data Storage \& Databases}\label{data-storage-databases}}
+
+Placeholder
+
+\hypertarget{dta-raw}{%
+\subsection{Raw data assets}\label{dta-raw}}
+
+\hypertarget{processed-individual-data}{%
+\subsection{Processed, individual data}\label{processed-individual-data}}
+
+\hypertarget{indicators---statistically-processed-data}{%
+\subsection{Indicators - statistically processed data}\label{indicators---statistically-processed-data}}
+
+\hypertarget{periodic-data-releases}{%
+\subsection{Periodic data releases}\label{periodic-data-releases}}
+
+\hypertarget{interactive-data-releases}{%
+\subsection{Interactive data releases}\label{interactive-data-releases}}
+
+\hypertarget{continous-data-releases-in-api}{%
+\subsection{Continous data releases in API}\label{continous-data-releases-in-api}}
+
+\hypertarget{applications}{%
+\section{Applications}\label{applications}}
+
+Placeholder
+
+\hypertarget{file-variable-names-value-labels}{%
+\subsection{File, Variable Names, Value Labels}\label{file-variable-names-value-labels}}
+
+\hypertarget{path}{%
+\subsubsection{Path}\label{path}}
+
+\hypertarget{r-language}{%
+\paragraph{R language}\label{r-language}}
+
+\hypertarget{variable-nameing-styles}{%
+\subsubsection{Variable nameing styles}\label{variable-nameing-styles}}
+
+\hypertarget{character-coding}{%
+\subsubsection{Character coding}\label{character-coding}}
+
+\hypertarget{statistical-software}{%
+\subsection{Statistical Processing \& Indicators}\label{statistical-software}}
+
+\hypertarget{retroharmonize}{%
+\subsubsection{retroharmonize}\label{retroharmonize}}
+
+\hypertarget{regions}{%
+\subsubsection{regions}\label{regions}}
+
+\hypertarget{iotables}{%
+\subsubsection{iotables}\label{iotables}}
+
+\hypertarget{machine-learning-applications}{%
+\subsection{Machine Learning Applications}\label{machine-learning-applications}}
+
+\hypertarget{listen-local-app}{%
+\subsubsection{Listen Local app}\label{listen-local-app}}
+
+\hypertarget{bandcamp-librarian-app}{%
+\subsubsection{Bandcamp Librarian app}\label{bandcamp-librarian-app}}
+
+\hypertarget{covenant}{%
+\section{Contributor Covenant Code of Conduct}\label{covenant}}
+
+\hypertarget{our-pledge}{%
+\subsection{Our Pledge}\label{our-pledge}}
+
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
+
+\hypertarget{our-standards}{%
+\subsection{Our Standards}\label{our-standards}}
+
+Examples of behavior that contributes to a positive environment for our
+community include:
+
+\begin{itemize}
+\tightlist
+\item
+  Demonstrating empathy and kindness toward other people
+\item
+  Being respectful of differing opinions, viewpoints, and experiences
+\item
+  Giving and gracefully accepting constructive feedback
+\item
+  Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+\item
+  Focusing on what is best not just for us as individuals, but for the
+  overall community
+\end{itemize}
+
+Examples of unacceptable behavior include:
+
+\begin{itemize}
+\tightlist
+\item
+  The use of sexualized language or imagery, and sexual attention or
+  advances of any kind
+\item
+  Trolling, insulting or derogatory comments, and personal or political attacks
+\item
+  Public or private harassment
+\item
+  Publishing others' private information, such as a physical or email
+  address, without their explicit permission
+\item
+  Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+\end{itemize}
+
+\hypertarget{enforcement-responsibilities}{%
+\subsection{Enforcement Responsibilities}\label{enforcement-responsibilities}}
+
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
+
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
+
+\hypertarget{scope}{%
+\subsection{Scope}\label{scope}}
+
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
+
+\hypertarget{enforcement}{%
+\subsection{Enforcement}\label{enforcement}}
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+{[}INSERT CONTACT METHOD{]}.
+All complaints will be reviewed and investigated promptly and fairly.
+
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
+
+\hypertarget{enforcement-guidelines}{%
+\subsection{Enforcement Guidelines}\label{enforcement-guidelines}}
+
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
+
+\hypertarget{correction}{%
+\subsubsection{1. Correction}\label{correction}}
+
+\textbf{Community Impact}: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
+
+\textbf{Consequence}: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+
+\hypertarget{warning}{%
+\subsubsection{2. Warning}\label{warning}}
+
+\textbf{Community Impact}: A violation through a single incident or series
+of actions.
+
+\textbf{Consequence}: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or
+permanent ban.
+
+\hypertarget{temporary-ban}{%
+\subsubsection{3. Temporary Ban}\label{temporary-ban}}
+
+\textbf{Community Impact}: A serious violation of community standards, including
+sustained inappropriate behavior.
+
+\textbf{Consequence}: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+\hypertarget{permanent-ban}{%
+\subsubsection{4. Permanent Ban}\label{permanent-ban}}
+
+\textbf{Community Impact}: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+\textbf{Consequence}: A permanent ban from any sort of public interaction within
+the community.
+
+\hypertarget{attribution}{%
+\subsection{Attribution}\label{attribution}}
+
+This Code of Conduct is adapted from the \href{https://www.contributor-covenant.org}{Contributor Covenant},
+version 2.0, available at
+\url{https://www.contributor-covenant.org/version/2/0/code_of_conduct.html}.
+
+Community Impact Guidelines were inspired by
+\href{https://github.com/mozilla/diversity}{Mozilla's code of conduct enforcement ladder}.
+
+For answers to common questions about this code of conduct, see the FAQ at
+\url{https://www.contributor-covenant.org/faq}. Translations are available
+at \url{https://www.contributor-covenant.org/translations}.
+
+\hypertarget{documentation}{%
+\section{Documentation}\label{documentation}}
+
+Placeholder
+
+\hypertarget{citations-bibliography}{%
+\subsection{Citations, Bibliography}\label{citations-bibliography}}
+
+\hypertarget{software-releases}{%
+\subsection{Software Releases}\label{software-releases}}
+
+\hypertarget{data-releases}{%
+\subsection{Data releases}\label{data-releases}}
+
+\hypertarget{dataverse}{%
+\subsubsection{Dataverse}\label{dataverse}}
+
+\hypertarget{zenodo}{%
+\subsubsection{Zenodo}\label{zenodo}}
+
+\hypertarget{publications}{%
+\subsection{Publications}\label{publications}}
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+Placeholder
+
+\hypertarget{markdown}{%
+\subsection{Markdown}\label{markdown}}
+
+\hypertarget{bookdown}{%
+\subsection{Bookdown}\label{bookdown}}
+
+\hypertarget{tinytex}{%
+\subsection{Tinytex}\label{tinytex}}
+
+  \bibliography{book.bib,packages.bib,antal.bib,ccipolicy.bib}
+
+\end{document}
