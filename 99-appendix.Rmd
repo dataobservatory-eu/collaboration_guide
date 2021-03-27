@@ -16,7 +16,7 @@ install.packages("bookdown")
 
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro).
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
