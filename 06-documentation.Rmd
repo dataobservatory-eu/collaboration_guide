@@ -1,4 +1,4 @@
-# Documentation
+# Documentation And Publications {#documentation}
 
 
 ## Citations, Bibliography
@@ -37,7 +37,11 @@ We have so far three released software products.
 
 They are released on CRAN, and they follow the CRAN guidelines for unit-testing and human review. As CRAN relies on extensive automated testing, the formatting standard is *very strict* both for the software code and its documentation. The slightest deviation results in rejection.
 
-## Data releases
+## Metadata {#documentation-metadata}
+
+Metadata plays an important role in our [databases](#data-storage) and in [documentation](#documentation), too.  We placed it into a [separate chapter](#metadata). 
+
+## Data releases {#data-release}
 
 We currently work with two platforms, and we must maintain compatibility with data repositories that our clients use. Both provide some validation, version control, and give a standard **doi** to our releases.
 

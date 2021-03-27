@@ -2,7 +2,7 @@
 
 We process and release data to be used in various business, policy and scientific applications. In this collaboration guideline we do not want to document these applications - they are very specific to the problem, domain or client. The aim of this guideline to make the data collection, processing and dissemination workflow open for collaborators.  The aim of this collaboration is to create high-quality, timely and well-documented data assets for various applications. We add application-specific information here to the extent that it helps data collaboration.
 
-## File, Variable Names, Value Labels
+## File, Variable Names, Value Labels {#naming-conventions}
 
 > There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton
 
@@ -35,7 +35,7 @@ s.
 In websites only:
 Hugo has its own relative path system.
 
-#### R language
+#### R language {#R-guide}
 
 Consider the two identical meaning R code:
 
@@ -113,7 +113,7 @@ It has one peer-reviewed release.
 It has several peer-reviewed releases.
 
 
-## Machine Learning Applications
+## Machine Learning Applications {#machine-learning}
 
 
 ### Listen Local app

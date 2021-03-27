@@ -1,0 +1,7 @@
+# Metadata {#metadata}
+
+We follow the metadata definition and concepts of [Metadata](https://mitpress.mit.edu/books/metadata) from the MIT Press Essential Knowledge series.
+
+It is not, Pomerantz tell us, just “data about data.” It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. When metadata does its job well, it fades into the background; everyone (except perhaps the NSA) takes it for granted.
+
+Pomerantz explains what metadata is, and why it exists. He distinguishes among different types of metadata—descriptive, administrative, structural, preservation, and use—and examines different users and uses of each type. He discusses the technologies that make modern metadata possible, and he speculates about metadata's future. By the end of the book, readers will see metadata everywhere. Because, Pomerantz warns us, it's metadata's world, and we are just living in it.

@@ -1,4 +1,4 @@
-# Data Storage & Databases
+# Data Storage & Databases {#data-storage}
 
 We may pursue several data storage philosophies. 
 
@@ -16,6 +16,9 @@ Placing data in a database, particularly a not very well documented database goe
 
 We always must keep the right balance between the advantages of using a database and the advantages of a fully transparent and readable data workflow. We must balanace the documentation burden of a constantly updated database with keeping the process as a documentation and not hiding immediate results in a database.
 
+## Metadata {#storage-metadata}
+
+Metadata plays an important role in our [databases](#data-storage) and in [documentation](#documentation), too.  We placed it into a [separate chapter](#metadata). 
 
 ## Raw data assets {#dta-raw}
 

@@ -1,5 +1,19 @@
 # Introduction {#intro}
 
+Provided that you use whatever IDE and Git/Github, there is unlikely that this guide will pose any challenge for you.  Markdown and YAML are very simple, special-purpose markdown “languages” (the language is a big word here) that you can learn in 1-2 hours. They create marked up text, which we use for a hypertextual reference guide.  
+
+To collaboration on our software data products, there are other skills necessary, but for documentation and publication, technically you can get started with a clean text editor and git. We have a [Simplified Introduction](#simple-intro) for you, which shows what can you skip in the rest of the document -- almost everything.  But do not skip this [Introduction](#intro).
+
+## Definitions 
+
+- `Open Data` is data that is freely available to everyone to use and republish without legal or other restrictions. The most important sources of open data are open science data connected to scientific activities that allow the replication of scientific achievements. In Europe, the re-use of public sector information, in other jurisdictions, freedom of information regulations make various public institutions' and taxpayer funded datasets available for reuse. Open data is a very important source of information for business, scientific and policy uses.
+
+- `Reproducible research`: The quality control of open data is focusing on reviewable, reproducible and confirmable findings.  Auditability is a requirement in most high-level business, scientific or policy applications. 
+
+- `Open Source`: In most cases, when the data processing code and procedure is not a well-documented, open-source algorithm, reproducibility and confirmability is limited, or impossible. 
+
+- `Metadata`: It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. We use the distinction of descriptive, administrative, structural, preservation, and use metadata. See [metadata](#metadata).
+
 ## Code of Conduct
 
 We as members, contributors, and leaders pledge to make participation in our
@@ -13,11 +27,154 @@ diverse, inclusive, and healthy community.
 
 *If you work with us, you must adhere to the [Contributor Covenant Code of Conduct](#covenant)
 
-## IDE
+## Collaboration Tools
 
-Our recommended IDE for documentation purposes is RStudio.  You must install R, RStudio at least to make it work.  For PDF outputs, you need to add a pdf compiler (recommended: tinytex, a lightweight tex compiler.) If you want to run Python code within RStudio, you need to have Pyhton installed on your computer, too.
+### Instant messaging: Keybase {#keybase}
+Keybase is a very neat, simple, lightweight team management / chat / social networking application that is extremely focused on privacy, security and encryption.
 
-## Simple Introduction
+**Keybase Key features**
+
+- Secure instant messaging, even with a timed self-destruction feature (e.g. for sharing passwords);
+Starts a Google Meet or Zoom video call natively with a single command;
+- Brings your Whatsapp chat to the more private and secure keybase chat on the fly;
+
+- Team chat rooms in real time. You can filter where you want to be involved, and you can always opt-out;
+
+-K-Drive (similar to OneDrive, Google Drive, Dropbox) – only for our team, and fully encrypted;
+Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
+An integration with other platforms;
+It is neat, open source, simple, clean, and usually appreciated more in the open source community than Slack, its big corporation rival.
+
+Practical steps you need to follow to use Keybase
+
+1. Download & install Keybase from [https://keybase.io/](https://keybase.io/) on your computer.
+
+An easy procedure. Create yourself a professional login name – similarly to a professional github account, a professional email, etc. (you cannot change the name afterwards)
+
+2. Once you log in to the computer, go to *Devices*, and *Create a paper key*. Write this on paper, or print it, and store it somewhere very safe (not near your computer). This to recover the access in case you lose access to all your devices. 
+
+3. You can use Keybase simultaneously on multiple devices – Install Keybase on your smartphone, tablet or any other device. You will be guided through installation & paired with your computer.  
+
+4. Shall you need them, you have *two recovery options*: the paper key and your smartphone.
+
+5. If your smartphone breaks down and needs a replacement, you can add from your computer your new phone and deactivate the old one.
+
+6. Once you are in, look up `antaldaniel`. (Daniel is antaldaniel on Facebook, Twitter, Instagram, github, gmail, yahoo and basically every place where he was an early user, so you can connect with him on whatever channel you want.) 
+7. After a handshake Daniel will assist your smooth transition, help you find ways to our shared files, your project’s files, and set up filters, so you are not flooded with information, while never left out, unless you choose to. 
+
+8. Initially, we set up the following “Big teams”, as Keybase calls them, and we will send an invitation to join: 
+- `reprexscience` for our data science teams;
+- `reprexdev` for developer(s), which may overlap with business development and science;
+- `reprexbd` for business development, which may overlap with science;
+- `reprexhumanities` for our creative team and data journalism
+- `reprexfriends` for prospective team members, friends, and hoped-for-cooperation partners – partly for people we are discreetly asking to join us, or who want to know more about some of our work and cooperate with us;
+- `reprexmanagement` for Istvan (general management) and Daniel (co-founder) - this is a closed team for now;
+- `reprexmusic20` for our Music Professionals 2020 team.
+- [reprexcommunity](https://keybase.io/team/reprexcommunity) is an open landing page for anybody, it is a public interface. If you every land there `antaldaniel` will take you to the appropriate, otherwise invisible team room. 
+
+Each big team has four special members for a smooth transition: Daniel and Zuzana to assist you with getting familiar with Keybase, zoombot (just type `!zoom` to create a Zoom call with the team members present) and meetbot (that does the same with Google Meet, `!meet`). Daniel will gradually withdraw from some of the teams, once their support is not needed, though each team will have at least one Reprex co-founder present. We invite everybody to at least one team, but you can sign up to as many as you like, shall you find that convenient. 
+
+9. Whenever you are in a situation you want to ignore us (e.g. because you sit in your dayjob), just do it. If you have a smartphone, we are there, separated from your Whatsapp friends, work emails, and you can always check on us. We can always send you a secure (and even encrypted) message to get in touch, if needed. However, we will never ever bother you with long emails, Whatsapp messages and other annoying things.
+
+*Let’s keep things short, give access to the full picture when needed, and let you find out what mix of response time, details and filters works best for you.*
+
+
+### Git & Github {#github}
+
+Git is a simultaneous collaboration for for any distributed team work - writing, programming, design work.  Git is an open source software which makes sure that your teamwork files are always synchronized, clashes are avoided (you modify the same part of a file at the same time with Daniel.) The only hard part to move to Git is to make sure that Git properly works on your computer - it needs to be installed differently on all Linux distros, Mac OSX version all Windows versions. On Windows, you must make sure that Git is on the startup path. Once you are there, you'll life will be much easier.
+
+- [Keybase](#keybase) allows the group work on encrypted documents, like business proposals simultaneously using Git synch.
+
+- RStudio allows us to work simultaneously on business proposals, blog posts, templates via Git.
+
+- Github is allows us to use shared folders (`repositories` or simply `repos`) where we can track changes, modify the same thing at the same time, avoid or resolve conflicting edits, assign tasks, and much more.
+
+If you do not have a github account yet, please, sign up now on [github.com](https://github.com/). Create a very professional profile.  It is likely that you will use this profile for future works for decades, as Git is really becoming the norm of digital nomads, freelancers, and tech teams to work together. 
+
+Github is not the only service platform that allows distributed, collaborative teamwork.  It has many alternatives, for example, GitLab -- don't confuse them. We use Github.
+
+- [dataobservatory-eu](https://github.com/dataobservatory-eu) is our private repo collection and private github collaboration platform.
+
+
+### Rstudio IDE & other IDE
+
+Our recommended IDE for documentation purposes is RStudio.  You must install R, RStudio at least to make it work.  For PDF outputs, you need to add a pdf compiler (recommended: tinytex, a lightweight tex compiler.) If you want to run Python code within RStudio, you need to have Pyhton installed on your computer, too. If you work in documentation and publishing, think about RStudio as a word processor that can save your work in html, pdf, Word, epub, keynote, PowerPoint, or any OpenOffice or Apple formats.
+
+We work with data in the R and Python language, and we are open for C++, too. Our documentation is made in markdown to be able to produce html, pdf, word, powerpoint, reveal.js or any type of output. Our long-form documentation is knit together with the help of the 'bookdown', 'knitr', 'rmarkdown' packages in the R language -- they combine YAML headers and enriched markdown that can contain R, Python or C++ executable code 'chunks', and our website use markdown, hugo, and the 'blogdown' connector between Go, R, and markdown.
+
+This heterogeneous workflow is best served in RStudio.  While you can write code in your favorite IDE in Python and/or C++, RStudio is unrivaled in its capability to connect various markup languages and several programming languages. Therefore, for documentation purposes, we use RStudio.  You can contribute in any other editor -- our longform documentation and our website content is, after all, marked-up text.  If you need to execute something for within the documentation, only RStudio will do the trick.
+
+## Simple Introduction {#simple-intro}
 
 > This part is intendend for collaborators who do not write regularly code, and do not use markdown, LaTeX in their work.
 
+You will likely work with [data curation](#data-curation) and [documentation,  publications](#documentation) which is equally important to developing code. 
+
+
+### Markdown {#markdown}
+
+Markdown is a simple "language", or rather a writing notation system that lets the word processor know that `*italics*` means *italics*, or  `**bold**` means **bold** or `## Writing, blogging` becomes a level 2 heading, and `### Markdown {#markdown}` is a level 3 heading that can be referenced in the table of contents or internal hypertext links with `[Jump to markdown introduction](#markdown)`.
+
+Markdown makes it possible that we can work on documents that will render fine in `html`, `docs`, `pptx`, `pdf`, `google docs`, or `md` for markdown files.
+
+Markdown is a "markup language". But that is a too big word. It is more of a notation system for writing clear text that later can be automatically formatted.
+
+For example `[Introduction to RMarkdown](https://rmarkdown.rstudio.com/lesson-1.html)` creates the hypertext link [Introduction to RMarkdown](https://rmarkdown.rstudio.com/lesson-1.html) in  `html`, `docs`, `pptx`, `pdf`, `iWork Keynote`, `xlsx` or any file format that we need to create.
+
+Markdown is very important for reproducible research and automation. It makes sure that the content and the form is fully separated.  
+
+- It is always the computer's task to make the formatting work perfectly and beautifully.
+
+- It is sometimes the computer's task to fill out the document with text and numbers.  
+
+- It is a human task to desnbng beautiful documents, like blogposts, business proposals, research reports that are very easy to replicate automatically.
+
+Markdown is not strictly a language, and it has many 'flavors' or notation version.  The differences are usually related to the programming interface that allows the file conversion.  If you are new to markdown, you can start with any flavor, the main text functions are the same.
+
+- [StackEdit](https://stackedit.io/) is a wonderful tool, and we would recommend it, if it would not have been suspended from the Google Drive integration.  You can try it out online.  It is probably the cleanest interface to get you started.
+
+- [Heroku Markdown Editor](https://thumbsdb.herokuapp.com/markdown/) integrates reasonably easily to your Google Drive. This means that you can edit our blogposts in your Google Documents. 
+
+- [Docs to Markdown](https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607) translates your Google Docs to Markdown. However, you must link your own images via a valid path.
+
+- [RStudio](https://rstudio.com/) is our preferred offline application. It integrates seamlessly with Github. It is an integrated programming environment with four panels.  If you use it as a markdown text editor, you can just minimize or close the programming tools.
+
+RStudio uses the Rmarkdown, a special version of markdown, where you can insert little programs in `R`, `Python`, `C++`, `SQL`,  `D3` or `Bash` scripts.  For example, you can write a blogpost that retrieves data with a little program written by our musicology team from Spotify, or embeds a YouTube video, etc. The `code chunks` are visually separated from the proposal or blog post text, and you can ignore it if you do not *yet* write code.
+
+- [RMarkdown Cheat Sheet](https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf?_ga=2.126386957.1623649708.1603024238-59012930.1603024238)
+- [Rmarkdown Reference](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.68348561.1623649708.1603024238-59012930.1603024238)
+
+## Inspiration & Recommended Reading {#inspiration}
+
+### Books
+
+#### Why: Weapons of Math Destruction
+
+Weapons of math destruction, which O’Neil refers to throughout the book as WMDs, are mathematical models or algorithms that claim to quantify important traits: teacher quality, recidivism risk, creditworthiness but have harmful outcomes and often reinforce inequality, keeping the poor poor and the rich rich. They have three things in common: opacity, scale, and damage [@weapons_of_math_destruction]. 
+
+[https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/](https://blogs.scientificamerican.com/roots-of-unity/review-weapons-of-math-destruction/)
+
+#### How: Metadata
+
+Metadata describes all the information that we collect, storeand disseminate in the forms of tables, maps, charts, apps, articles and books. Metadata is not data, it is the organization of data that is ready for use, publication, archiving or other purposes.
+
+We follow the metadata definition and concepts of [Pomerantz: Metadata](https://mitpress.mit.edu/books/metadata) from the MIT Press Essential Knowledge series [@pomerantz_2015]. If you are a data scientist or an engineer, you will understand this book well. If you help us with data journalism, documentation, publications, this small book can help you understand the challenges we face when we want to make sure that our data will be easy to find, easy to use, transparent with the "small print." Read this short book by just skipping whatever you find technical. The first chapters of the book will save you countless of hours of misunderstandings. 
+
+It is not, Pomerantz tell us, just “data about data.” It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. When metadata does its job well, it fades into the background; everyone (except perhaps the NSA) takes it for granted.
+
+#### Critically: Data Feminism
+
+Critical attitude to working with with big data and AI:  [Data Feminism](https://mitpressonpubpub.mitpress.mit.edu/data-feminism). This is a much celebrated book, and with a good reason. It views AI and data problems with a feminist point of view, but the examples and the toolbox can be easily imagined for small-country biases, racial, ethnic, or small enterprise problems.  A very good introduction to the injustice of big data and the fight for a more fair use of data [@data_feminism].
+
+
+### Blog posts & Podcasts {#blogposts}
+
+"big data increases inequality and threatens democracy." With Facebook's new [trending topics algorithm](http://qz.com/769413/heres-how-facebooks-automated-trending-bar-probably-works/) and [data-driven policing](https://medium.com/equal-future/predictive-policing-is-happening-now-and-police-could-learn-a-real-lesson-from-minority-report-e105a592eda0#.h90q9xoqx) in the news, the book is certainly timely. 
+
+Any single episode of the now discontinued What’s the Point Podcast: [https://fivethirtyeight.com/features/introducing-fivethirtyeight-newest-podcast-whats-the-point/](https://fivethirtyeight.com/features/introducing-fivethirtyeight-newest-podcast-whats-the-point/)
+
+* How a bad algorithm re-organized fire stations that hurt the black Bronx the most when the fire broke out:  [Why The Bronx Really Burned](https://fivethirtyeight.com/features/why-the-bronx-really-burned/)
+
+*   [Who’s Accountable When An Algorithm Makes A Bad Decision?](https://fivethirtyeight.com/features/whos-accountable-when-an-algorithm-makes-a-bad-decision/)  Cathy O’Neil is most interested in meet three criteria: They are widespread, secret and unfair — the scoring methods that she says, for example, generate credit scores, keep someone in prison, or deny someone a job. On this week’s What’s The Point, O’Neil discusses her new book, “[Weapons of Math Destruction](https://weaponsofmathdestructionbook.com/)” 
+
+*   In [Algorithms of Oppression](https://nyupress.org/9781479837243/algorithms-of-oppression/), Safiya Umoja Noble challenges the idea that search engines like Google offer an equal playing field for all forms of ideas, identities, and activities. Data discrimination is a real social problem; Noble argues that the combination of private interests in promoting certain sites, along with the monopoly status of a relatively small number of Internet search engines, leads to a biased set of search algorithms that privilege whiteness and discriminate against people of color, specifically women of color. - submitted by [ajgmolina](https://keybase.io/ajgmolina)
