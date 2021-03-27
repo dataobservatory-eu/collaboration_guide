@@ -96,19 +96,19 @@ All our critical processing code goes through anonymous peer-review on CRAN. We 
 
 ### retroharmonize
 
-The aim of [retroharmonize](https://reprex.nl/software/retroharmonize/) is to provide tools for reproducible retrospective (ex-post) harmonization of datasets that contain variables measuring the same concepts but coded in different ways. Ex-post data harmonization enables better use of existing data and creates new research opportunities. For example, harmonizing data from different countries enables cross-national comparisons, while merging data from different time points makes it possible to track changes over time. [@retroharmonize]
+The aim of [retroharmonize](https://reprex.nl/software/retroharmonize/) is to provide tools for reproducible retrospective (ex-post) harmonization of datasets that contain variables measuring the same concepts but coded in different ways. Ex-post data harmonization enables better use of existing data and creates new research opportunities. For example, harmonizing data from different countries enables cross-national comparisons, while merging data from different time points makes it possible to track changes over time. [@R-retroharmonize]
 
 It has two peer-reviewed releases.
 
 ### regions
 
-The [regions](https://reprex.nl/software/regions/) package is an offspring of the eurostat package on [rOpenGov](https://github.com/rOpenGov). It started as a tool to validate and re-code regional Eurostat statistics, but it aims to be a general solution for all sub-national statistics. It will be developed parallel with other rOpenGov packages. [@regions]
+The [regions](https://reprex.nl/software/regions/) package is an offspring of the eurostat package on [rOpenGov](https://github.com/rOpenGov). It started as a tool to validate and re-code regional Eurostat statistics, but it aims to be a general solution for all sub-national statistics. It will be developed parallel with other rOpenGov packages. [@R-regions]
 
 It has one peer-reviewed release.
 
 ### iotables
 
-[iotables](https://reprex.nl/software/iotables/) processes all the symmetric input-output tables of the EU member states, and calculates direct, indirect and induced effects, multipliers for GVA, employment, taxation. These are important inputs into policy evaluation, business forecasting, or granting/development indicator design. iotables is used by about 800 experts around the world. [@iotables]
+[iotables](https://reprex.nl/software/iotables/) processes all the symmetric input-output tables of the EU member states, and calculates direct, indirect and induced effects, multipliers for GVA, employment, taxation. These are important inputs into policy evaluation, business forecasting, or granting/development indicator design. iotables is used by about 800 experts around the world. [@R-iotables]
 
 It has several peer-reviewed releases.
 

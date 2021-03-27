@@ -25,7 +25,7 @@ We create programatically `.bib` citation information files for our data product
 }
 ```
 
-Marking up a reference to [@retroharmonize] with `[@R-retroharmonize]` will place the citation in your selected format (here APA) to the text, and to the [references](#references) at the end of this documentation.
+Marking up a reference to [@R-retroharmonize] with `[@R-retroharmonize]` will place the citation in your selected format (here APA) to the text, and to the [references](#references) at the end of this documentation.
 
 ## Software Releases
 
