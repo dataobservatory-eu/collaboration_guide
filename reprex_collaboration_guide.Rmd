@@ -1,3 +1,147 @@
+--- 
+title: "Open Collaboration Guide"
+author: ["Daniel Antal"]
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output: 
+  bookdown::gitbook: default
+  bookdown::pdf_book:
+    language: english
+    template: null
+    toc: true
+    tof: true
+    includes:
+      keep_tex: true
+  bookdown::word_document2:
+    toc: false
+    reference_docx: templates/collab-template.docx
+    language: english
+classoption: openany, a4paper, oneside
+lang: en
+papersize: a4
+fontsize: "fontsize=13pt"
+linestretch: 1.1
+urlcolor: blue
+linkcolor: blue
+geometry: "left=3cm, right=3cm, top=2.5cm, bottom=2.5cm"
+bibliography: [book.bib, packages.bib, antal.bib, ccipolicy.bib, datascience.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a collaboration guide for Reprex open-source projects."
+---
+
+# Welcome {-}
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+
+# Introduction {#intro}
+
+Placeholder
+
+
+## Definitions 
+## Code of Conduct {#pledge}
+## Collaboration Tools
+### Instant messaging: Keybase {#keybase}
+### Git & Github {#github}
+### Rstudio IDE & other IDE
+## Simple Introduction {#simple-intro}
+### Markdown {#markdown}
+## Inspiration & Recommended Reading {#inspiration}
+### Books
+#### Why: Weapons of Math Destruction
+#### How: Metadata
+#### Critically: Data Feminism
+### Blog posts & Podcasts {#blogposts}
+
+<!--chapter:end:01-intro.Rmd-->
+
+
+# Data Curation {#data-curation}
+
+Placeholder
+
+
+## EU Datathlon 2021 {#eu-datathlon}
+## Observatories
+## Meta Observatory 
+### European Music Observatory {#emo}
+## Strengths
+
+<!--chapter:end:02-data-curation.Rmd-->
+
+# Data Acquistion {#acquisition}
+
+Whatever is the source of the data we use it, we never trust it fully. We need check its strength and weaknesses, and bring it to a complete, documented and tidy form.
+
+## Metadata {#collect-metadata}
+
+Metadata plays an important role to find whatever we acquired and use it properly. It plays an important role during the storage of data in our [databases](#data-storage) and in [documentation and publication](#documentation), too.  We placed it into a [separate chapter](#metadata). 
+
+## Eurostat
+
+
+
+## Harmonized Survey Programs
+
+## Music APIs
+
+### Spotify API
+
+We collect the following data from the Spotify API
+
+
+
+### Bandcamp
+
+
+<!--chapter:end:03-acquisition.Rmd-->
+
+
+# Data Storage & Databases {#data-storage}
+
+Placeholder
+
+
+## Metadata {#storage-metadata}
+## Raw data assets {#dta-raw}
+## Processed, individual data
+## Indicators - statistically processed data
+## Periodic data releases
+## Interactive data releases
+## Continous data releases in API
+
+<!--chapter:end:04-data-storage.Rmd-->
+
+
+# Applications {#applications}
+
+Placeholder
+
+
+## File, Variable Names, Value Labels {#naming-conventions}
+### Path
+#### R language {#R-guide}
+### Variable nameing styles
+### Character coding
+## Statistical Processing & Indicators {#statistical-software}
+### retroharmonize
+### regions
+### iotables
+## Machine Learning Applications {#machine-learning}
+### Listen Local app {#listen-local}
+### Bandcamp Librarian app {#bandcamp-librarian}
+## Maps {#maps}
+
+<!--chapter:end:05-applications.Rmd-->
+
 ---
 output:
   word_document: default
@@ -112,4 +256,55 @@ naming_example %>%
 * `contains("artist")` selects all artist features
 * `ends_with("_id")` selects all ID's.  Because `id` is short, it may appear in words like `india`. But `_id` is unique, particularly if it is the end of a variable name.
 * `starts_with("spotify")` selects all features related to Spotify, and `starts_with("spotify") & contains("_rec_")` selects all recording features. 
+
+
+<!--chapter:end:06-documentation.Rmd-->
+
+# Metadata {#metadata}
+
+We follow the metadata definition and concepts of [Metadata](https://mitpress.mit.edu/books/metadata) from the MIT Press Essential Knowledge series.
+
+It is not, Pomerantz tell us, just “data about data.” It is a means by which the complexity of an object is represented in a simpler form. For example, the title, the author, and the cover art are metadata about a book. When metadata does its job well, it fades into the background; everyone (except perhaps the NSA) takes it for granted.
+
+Pomerantz explains what metadata is, and why it exists. He distinguishes among different types of metadata—descriptive, administrative, structural, preservation, and use—and examines different users and uses of each type. He discusses the technologies that make modern metadata possible, and he speculates about metadata's future. By the end of the book, readers will see metadata everywhere. Because, Pomerantz warns us, it's metadata's world, and we are just living in it.
+
+<!--chapter:end:07-metadata.Rmd-->
+
+
+# Contributor Covenant Code of Conduct {#covenant}
+
+Placeholder
+
+
+## Our Pledge
+## Our Standards
+## Enforcement Responsibilities
+## Scope
+## Enforcement
+## Enforcement Guidelines
+### 1. Correction
+### 2. Warning
+### 3. Temporary Ban
+### 4. Permanent Ban
+## Attribution
+
+<!--chapter:end:18-covenant.Rmd-->
+
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:89-references.Rmd-->
+
+
+# Appendix
+
+Placeholder
+
+
+## Markdown
+## Bookdown
+## Tinytex 
+
+<!--chapter:end:99-appendix.Rmd-->
 
