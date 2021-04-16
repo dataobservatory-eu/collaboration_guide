@@ -52,46 +52,6 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[left=3cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -102,6 +62,19 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -132,7 +105,7 @@
 
 \title{Open Collaboration Guide}
 \author{Daniel Antal}
-\date{2021-03-27}
+\date{2021-03-28}
 
 \begin{document}
 \maketitle
@@ -156,6 +129,8 @@ Most of this long-form documentation is intended for collaborators who write cod
 Open collaboration is an agile project management method that breaks up the tasks to small, independent, decentralized acts that can be performed by individuals or research groups. It requires a solid shared knowledge base and a very high quality documentation. This collaboration guide serves two goals: to practice this documentation workflow, and to create a continuously improved documentation for our collaboration methods and practices.
 
 We \protect\hyperlink{pledge}{pledge} to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. We ask you to contribute to the growth of our open collaboration, and we would like to contribute to your growth. We would love to work with your favorite \protect\hyperlink{data-curation}{data}, add your inspiring reading and listening \protect\hyperlink{inspiration}{recommendations} to this guide and cite your \protect\hyperlink{bibliography}{work} throughout or publications.
+
+You can edit yourselft this guide on \href{https://github.com/dataobservatory-eu/collaboration_guide/}{github}. The html, \href{https://open-collaboration-guide.dataobservatory.eu/reprex_collaboration_guide.docx}{epub}, \href{https://open-collaboration-guide.dataobservatory.eu/reprex_collaboration_guide.docx}{docx} and pdf versions can be found on \href{https://open-collaboration-guide.dataobservatory.eu/}{open-collaboration-guide.dataobservatory.eu}. The pdf is not working.
 
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
@@ -241,7 +216,7 @@ An easy procedure. Create yourself a professional login name -- similarly to a p
 \item
   If your smartphone breaks down and needs a replacement, you can add from your computer your new phone and deactivate the old one.
 \item
-  Once you are in, look up \texttt{antaldaniel}. (Daniel is antaldaniel on Facebook, Twitter, Instagram, github, gmail, yahoo and basically every place where he was an early user, so you can connect with him on whatever channel you want.)
+  Once you are in, look up \texttt{antaldaniel}.
 \item
   After a handshake Daniel will assist your smooth transition, help you find ways to our shared files, your project's files, and set up filters, so you are not flooded with information, while never left out, unless you choose to.
 \item
@@ -415,6 +390,81 @@ Any single episode of the now discontinued What's the Point Podcast: \url{https:
 
 We are constantly looking for new data sources that may be interesting to our partners or for our own R\&D activities.
 
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  We would like to win at least one international competition with one of our open data observatories. Currently we must focus on the \protect\hyperlink{eu-datathlon}{EU Datathlon 2021}, because it has very desirable policy partners, and in their ecosystems we may find business and scientific partners, too.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=17.64in]{plots/EU-Datathlon-2021-partners} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  We are targeting universities and research organizations that participate in the Horizon Europe program and Chanse program. We focus our open data efforts on these areas, because there will be the most research spending in Europe. We hope that we will not only be seen as data providers, but research automation and Open Policy Analysis partners, too.
+\item
+  We are organizing our data assets, software solution and know-how around data observatories. We are following 79 observatories, and we are aiming to be members, founders or managers of 3-5 EU, OECD or UN recognized observatories. We are competing for the \protect\hyperlink{emo}{European Music Observatory} and the European Culture/Culture Heritage Observatory.
+\end{enumerate}
+
+\begin{center}\includegraphics{gifs/observatory_overview_2021_03_26_captions} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  We are looking for partners for our observatories who want to provide consulting services in the EU priority areas (covered by the \protect\hyperlink{eu-datathlon}{EU Datathlon}) and the Horizon Europe and Chanse Priority Areas.
+\end{enumerate}
+
+\hypertarget{eu-datathlon}{%
+\section{EU Datathlon 2021}\label{eu-datathlon}}
+
+\begin{figure}
+\centering
+\includegraphics{https://ec.europa.eu/eusurvey/files/084aa855-0258-4fea-bc6d-b9506983e7e0/d0f32975-cfb6-4f7d-b515-f2f76e7f628d}
+\caption{\href{https://ec.europa.eu/eusurvey/runner/EU-Datathon-2021-project-descriptions}{EU Datathlon}}
+\end{figure}
+
+This year, the \href{https://ec.europa.eu/eusurvey/runner/EU-Datathon-2021-project-descriptions}{EU Datathlon} offers 3 first, second and third prizes. We should be in competition at least for one. They are centerred around the EU's strategic policies for the next decade.
+
+Our most ambitious goal would be to mount a challenge in all three categories, which would be a statement that we have a general solution for evidence-based policy research. We can make this statement with two observatories, too.
+
+Challenge 1 - A European Green Deal with \href{https://naughty-jepsen-95cdf2.netlify.app/}{greendeal.dataobservatory.eu}
+
+Challenge 2 - \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en}{An economy that works for people}
+
+Challenge 3 - A \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age_en}{Europe fit for the digital age} -- \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/excellence-trust-artificial-intelligence_en}{Artificial intelligence}; \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-data-strategy_en}{European Data Strategy} -- \href{https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en}{Digital Services Act}
+
+\hypertarget{observatories}{%
+\section{Observatories}\label{observatories}}
+
+\hypertarget{meta-observatory}{%
+\section{Meta Observatory}\label{meta-observatory}}
+
+This project aims to
+
+\begin{itemize}
+\tightlist
+\item
+  Map all EU, OECD, UN observatories
+\item
+  Benchmark their value for money
+\item
+  Look for inroads for our data, technology and organizational know-how.
+\end{itemize}
+
+We aim to make an observatory (no final name yet) and an annual observatory handbook.
+
+\hypertarget{emo}{%
+\subsection{European Music Observatory}\label{emo}}
+
+Our projects grew out from the CEEMID project that aimed to build comparable datasets for data-poor countries in the EU.
+
+\hypertarget{strengths}{%
+\section{Strengths}\label{strengths}}
+
 \hypertarget{acquisition}{%
 \chapter{Data Acquistion}\label{acquisition}}
 
@@ -529,14 +579,6 @@ Hugo has its own relative path system.
 
 Consider the two identical meaning R code:
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{read.csv}\NormalTok{(}\StringTok{"data/my{-}csv.csv"}\NormalTok{)}
-
-\FunctionTok{read.csv}\NormalTok{(}\FunctionTok{file.path}\NormalTok{(}\StringTok{"data{-}raw"}\NormalTok{, }\StringTok{"my{-}csv.csv"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 On CRAN, only the latter is permissible for publication? Why? Because the various Linux distributions, Windows and Mac uses paths differently. You can never be sure that a file path will mean the same thing with 100\% certainty, especially in the case of a full path. The full path is file-system dependent, and the three families of operational system use different ones.
 
 The function \texttt{file.path()} in R makes sure that on any R-supported platforms your code will thy to read \texttt{my-csv.csv} from the relative \texttt{data-raw} path.
@@ -611,11 +653,14 @@ It has several peer-reviewed releases.
 \hypertarget{machine-learning}{%
 \section{Machine Learning Applications}\label{machine-learning}}
 
-\hypertarget{listen-local-app}{%
-\subsection{Listen Local app}\label{listen-local-app}}
+\hypertarget{listen-local}{%
+\subsection{Listen Local app}\label{listen-local}}
 
-\hypertarget{bandcamp-librarian-app}{%
-\subsection{Bandcamp Librarian app}\label{bandcamp-librarian-app}}
+\hypertarget{bandcamp-librarian}{%
+\subsection{Bandcamp Librarian app}\label{bandcamp-librarian}}
+
+\hypertarget{maps}{%
+\section{Maps}\label{maps}}
 
 \hypertarget{documentation}{%
 \chapter{Documentation And Publications}\label{documentation}}
@@ -626,26 +671,6 @@ It has several peer-reviewed releases.
 For any external literature, data source, please, store the citation information in a well-formatted, thematic \texttt{.bib} files.
 
 We create programatically \texttt{.bib} citation information files for our data products, software releases, and published documents.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialCharTok{@}\NormalTok{Manual\{R}\SpecialCharTok{{-}}\NormalTok{regions,}
-\NormalTok{  title }\OtherTok{=}\NormalTok{ \{regions}\SpecialCharTok{:}\NormalTok{ Processing Regional Statistics\},}
-\NormalTok{  author }\OtherTok{=}\NormalTok{ \{Daniel Antal\},}
-\NormalTok{  note }\OtherTok{=}\NormalTok{ \{R package version }\DecValTok{0}\NormalTok{.}\FloatTok{1.6}\NormalTok{\},}
-\NormalTok{  url }\OtherTok{=}\NormalTok{ \{https}\SpecialCharTok{:}\ErrorTok{//}\NormalTok{regions.danielantal.eu}\SpecialCharTok{/}\NormalTok{\},}
-\NormalTok{  year }\OtherTok{=}\NormalTok{ \{}\DecValTok{2021}\NormalTok{\},}
-\NormalTok{\}}
-
-\SpecialCharTok{@}\NormalTok{Manual\{R}\SpecialCharTok{{-}}\NormalTok{retroharmonize,}
-\NormalTok{  title }\OtherTok{=}\NormalTok{ \{retroharmonize}\SpecialCharTok{:}\NormalTok{ Ex Post Survey Data Harmonization\},}
-\NormalTok{  author }\OtherTok{=}\NormalTok{ \{Daniel Antal\},}
-\NormalTok{  note }\OtherTok{=}\NormalTok{ \{R package version }\DecValTok{0}\NormalTok{.}\FloatTok{1.15}\NormalTok{\},}
-\NormalTok{  url }\OtherTok{=}\NormalTok{ \{https}\SpecialCharTok{:}\ErrorTok{//}\NormalTok{retroharmonize.dataobservatory.eu}\SpecialCharTok{/}\NormalTok{\},}
-\NormalTok{  year }\OtherTok{=}\NormalTok{ \{}\DecValTok{2021}\NormalTok{\},}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
 
 Marking up a reference to \citep{R-retroharmonize} with \texttt{{[}@R-retroharmonize{]}} will place the citation in your selected format (here APA) to the text, and to the \protect\hyperlink{references}{references} at the end of this documentation.
 
@@ -877,26 +902,11 @@ This is a \emph{sample} book written in \textbf{Markdown}. You can use anything 
 
 The \textbf{bookdown} package can be installed from CRAN or Github:
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
-
 Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
 
 You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}.
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{figure}
 
@@ -908,15 +918,6 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 \end{figure}
 
 Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nicetab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
 
 \begin{table}
 
@@ -961,14 +962,6 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
 
 You can install and integrate TinyTex with R with the help of the \texttt{tinytex} package. It installs TinyTex and some basic tex libraries from CTAN that are required for
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{require}\NormalTok{(tinytex)}
-\NormalTok{tinytex}\SpecialCharTok{::}\FunctionTok{install\_tinytex}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
 
   \bibliography{book.bib,packages.bib,antal.bib,ccipolicy.bib,datascience.bib}
 

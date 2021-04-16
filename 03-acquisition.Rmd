@@ -16,5 +16,9 @@ Metadata plays an important role to find whatever we acquired and use it properl
 
 ### Spotify API
 
+We collect the following data from the Spotify API
+
+
+
 ### Bandcamp
 

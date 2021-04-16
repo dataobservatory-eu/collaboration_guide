@@ -1,3 +1,62 @@
 # Data Curation {#data-curation}
 
 We are constantly looking for new data sources that may be interesting to our partners or for our own R&D activities.
+
+1. We would like to win at least one international competition with one of our open data observatories.  Currently we must focus on the [EU Datathlon 2021](#eu-datathlon), because it has very desirable policy partners, and in their ecosystems we may find business and scientific partners, too.
+
+```{r datathlon-partners, message=FALSE, fig.align='center'}
+knitr::include_graphics(file.path(
+  "plots", "EU-Datathlon-2021-partners.png"
+))
+```
+2. We are targeting universities and research organizations that participate in the Horizon Europe program and Chanse program. We focus our open data efforts on these areas, because there will be the most research spending in Europe. We hope that we will not only be seen as data providers, but research automation and Open Policy Analysis partners, too.
+
+3. We are organizing our data assets, software solution and know-how around data observatories. We are following 79 observatories, and we are aiming to be members, founders or managers of 3-5 EU, OECD or UN recognized observatories. We are competing for the [European Music Observatory](#emo) and the European Culture/Culture Heritage Observatory.
+
+```{r}
+knitr::include_graphics(file.path(
+  'gifs', 'observatory_overview_2021_03_26_captions.gif'
+))
+```
+
+
+4. We are looking for partners for our observatories who want to provide consulting services in the EU priority areas (covered by the [EU Datathlon](#eu-datathlon)) and the Horizon Europe and Chanse Priority Areas. 
+
+## EU Datathlon 2021 {#eu-datathlon}
+
+![[EU Datathlon](https://ec.europa.eu/eusurvey/runner/EU-Datathon-2021-project-descriptions)](https://ec.europa.eu/eusurvey/files/084aa855-0258-4fea-bc6d-b9506983e7e0/d0f32975-cfb6-4f7d-b515-f2f76e7f628d)
+
+This year, the [EU Datathlon](https://ec.europa.eu/eusurvey/runner/EU-Datathon-2021-project-descriptions) offers 3 first, second and third prizes.  We should be in competition at least for one. They are centerred around the EU's strategic policies for the next decade. 
+
+Our most ambitious goal would be to mount a challenge in all three categories, which would be a statement that we have a general solution for evidence-based policy research. We can make this statement with two observatories, too.
+
+Challenge 1 - A European Green Deal with [greendeal.dataobservatory.eu](https://naughty-jepsen-95cdf2.netlify.app/)
+	
+Challenge 2 - [An economy that works for people](https://ec.europa.eu/info/strategy/priorities-2019-2024/economy-works-people_en)
+	
+Challenge 3 - A [Europe fit for the digital age](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age_en) -- [Artificial intelligence](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/excellence-trust-artificial-intelligence_en); [European Data Strategy](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/european-data-strategy_en) -- [Digital Services Act](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-services-act-ensuring-safe-and-accountable-online-environment_en)
+
+
+
+## Observatories
+
+## Meta Observatory 
+
+This project aims to 
+
+- Map all EU, OECD, UN observatories
+- Benchmark their value for money
+- Look for inroads for our data, technology and organizational know-how.
+
+We aim to make an observatory (no final name yet) and an annual observatory handbook.
+
+### European Music Observatory {#emo}
+
+Our projects grew out from the CEEMID project that aimed to build comparable datasets for data-poor countries in the EU. 
+
+
+
+## Strengths
+
+
+

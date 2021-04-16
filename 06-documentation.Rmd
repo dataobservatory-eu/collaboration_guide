@@ -56,6 +56,7 @@ We currently work with two platforms, and we must maintain compatibility with da
 The Dataverse Project is being developed at Harvard's Institute for Quantitative Social Science (IQSS), along with many collaborators and contributors worldwide. The Dataverse Project was built on our experience with our earlier Virtual Data Center (VDC) project, which spanned 1997-2006 as a collaboration between the Harvard-MIT Data Center (now part of IQSS) and the Harvard University Library. Precursors to the VDC date to 1987, comprising such entities as pre-web software to automatically transfer cataloging information by FTP to other sites across campus automatically at designated times, and before that to a stand-alone software guide to local data.
 
 ### Zenodo 
+
 [zenodo](https://zenodo.org/) is the choice of the European Union, and it is likely that in the future all EU-financed research data must be published here.
 
 The OpenAIRE project, in the vanguard of the open access and open data movements in Europe was commissioned by the EC to support their nascent Open Data policy by providing a catch-all repository for EC funded research. CERN, an OpenAIRE partner and pioneer in open source, open access and open data, provided this capability and Zenodo was launched in May 2013.
@@ -65,3 +66,45 @@ In support of its research programme CERN has developed tools for Big Data manag
 ## Publications
 
 Our work is often embedded in publications. We want to make the application of various formatting guidelines as painless as possible. This is one of the main motivations to use markdown and Rmarkdown to document our work. There are more and more conversion tools that automatically convert our longform documentation from markdown or Rmarkdown to the formatting standards of almost any scientific publisher. 
+
+
+## Namespace
+
+
+### Naming variables, objects, features 
+
+In our program code and databases, we are following Open Science naming guidelines.  While there are many versions of naming guidelines, we must pick something that works for all and adhere to it. 
+
+For ease of programmatic use, we should follow a lowercase, snakecase variable naming.
+
+```{r naming-conventions, echo=FALSE}
+require(dplyr)
+require(snakecase)
+examples <- data.frame(
+  original = c("This Variable", "X1", "VarName", "My_Var", "that_variable")
+)
+examples %>%
+  mutate ( canonical = snakecase::to_snake_case(original)) %>%
+  knitr::kable()
+  
+```
+
+
+Variables should describe things starting with general to specific, when possible, or make group selections, such as `starts_with()` or `ends_with()` easy to use, because `contains()` can be ambiguous. 
+
+
+```{r naming-conventions-2, echo=FALSE}
+naming_example <- data.frame(
+  original = c("spotify_artist_id", "deezer_id_artist", "id_on_bandcamp_track", "artist_bandcamp_id", "gender_artist"),
+  canonical = c("spotify_artist_id", "deezer_artist_id", "bandcamp_rec_id", "bandcamp_artist_id", "gender_artist")
+)
+naming_example %>%
+  mutate ( canonical = snakecase::to_snake_case(original)) %>%
+  knitr::kable()
+  
+```
+
+* `contains("artist")` selects all artist features
+* `ends_with("_id")` selects all ID's.  Because `id` is short, it may appear in words like `india`. But `_id` is unique, particularly if it is the end of a variable name.
+* `starts_with("spotify")` selects all features related to Spotify, and `starts_with("spotify") & contains("_rec_")` selects all recording features. 
+

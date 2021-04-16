@@ -36,6 +36,12 @@ description: "This is a collaboration guide for Reprex open-source projects."
 
 `I didn't have time to write a short letter, so I wrote a long one instead.` — *Mark Twain* 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message=FALSE, 
+                      fig.align = "center")
+```
+
 For collaborators who do not write code, the general [Introduction](#intro) contains  a [Simple Introduction](#simple-intro) focusing on documentation tools only. Contributors with no coding experience and ambition will likely work with [data curation](#data-curation) and [documentation,  publications](#documentation) which is equally important to developing code. You must be familiar with our developers [naming conventions](#naming-conventions), because we automate research: their programs create data tables, visualizations, maps, blogposts, even books following this vocabulary.
 
 Most of this long-form documentation is intended for collaborators who write code to [acquire data](#acquisition), [store data](#data-storage), create applications such a [statistics](#statistical-software), or [machine learning applications](#machine-learning), and who help us [publish data](#data-release).
