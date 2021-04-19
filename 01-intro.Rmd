@@ -1,6 +1,6 @@
 # Introduction {#intro}
 
-Provided that you use whatever IDE and Git/Github, there is unlikely that this guide will pose any challenge for you.  Markdown and YAML are very simple, special-purpose markdown “languages” (the language is a big word here) that you can learn in 1-2 hours. They create marked up text, which we use for a hypertextual reference guide.  
+Provided that you use any IDE and Git/Github, there is little chance that this guide will pose any challenge for you.  Markdown and YAML are very simple, special-purpose markdown “languages” (the language is a big word here) that you can learn in 1-2 hours. They create marked up text, which we use for a hypertextual reference guide.  
 
 To collaboration on our software data products, there are other skills necessary, but for documentation and publication, technically you can get started with a clean text editor and git. We have a [Simplified Introduction](#simple-intro) for you, which shows what can you skip in the rest of the document -- almost everything.  But do not skip this [Introduction](#intro).
 
@@ -16,7 +16,7 @@ To collaboration on our software data products, there are other skills necessary
 
 ## Code of Conduct {#pledge}
 
-We as members, contributors, and leaders pledge to make participation in our
+We, as members, contributors, and leaders, pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
 size, visible or invisible disability, ethnicity, sex characteristics, gender
 identity and expression, level of experience, education, socio-economic status,
@@ -40,7 +40,7 @@ Starts a Google Meet or Zoom video call natively with a single command;
 
 - Team chat rooms in real time. You can filter where you want to be involved, and you can always opt-out;
 
--K-Drive (similar to OneDrive, Google Drive, Dropbox) – only for our team, and fully encrypted;
+- K-Drive (similar to OneDrive, Google Drive, Dropbox) – only for our team, and fully encrypted;
 - Works with Github, and it even offers a more private version of Private Github Repos, encrypted gits;
 - An integration with other platforms.
 
